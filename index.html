@@ -13,9 +13,11 @@
 
 <body class="page">
 
-<header class="page-header _container">
+<header class="page-header container">
   <div class="header-logo logo">
-    <img class="logo__img" src="images/svg/header_logo.svg" alt="логотип Девайс" width="145" height="36">
+    <a class="header-logo__link">
+      <img class="logo__img" src="images/svg/header_logo.svg" alt="логотип Девайс" width="145" height="36">
+    </a>
   </div>
   <div class="searcher">
     <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
@@ -41,16 +43,19 @@
     </ul>
   </div>
   <div class="basket">
-    <span>2</span>
-    <ul class="shopping-basket visually-hidden">
+    <span class="basket-counter">2</span>
+    <div class="shopping-basket">
+    <ul class="shopping-basket display-hidden">
       <li class="shopping-basket__item ">
-        <span class="shopping-basket__title">Любительская селфи-палка</span>
+        <img class="shopping-basket__img" src="" alt="">
+        <a class="shopping-basket__link" href="#">Любительская селфи-палка</a>
         <button class="button" type="button">
           <span class="visually-hidden">Удалить из корзины</span>
         </button>
       </li>
       <li class="shopping-basket__item ">
-        <span class="shopping-basket__title">Профессиональная селфи-палка</span>
+        <img class="shopping-basket__img" src="" alt="">
+        <a class="shopping-basket__link">Профессиональная селфи-палка</a>
         <button class="button" type="button">
           <span class="visually-hidden">Удалить из корзины</span>
         </button>
@@ -65,6 +70,7 @@
         <a class="basket-nav__link" href="#">Открыть корзину</a>
       </li>
     </ul>
+    </div>
   </div>
   <div class="header-nav">
     <p class="header-nav__title">Каталог товаров</p>
@@ -106,7 +112,7 @@
 
 <main>
   <h1 class=" visually-hidden">Интернет-магазин техники "Девайс"</h1>
-  <section class="slider _container">
+  <section class="slider container">
     <h2 class="visually-hidden">Популярные товары</h2>
     <div class="first-card card">
       <div class="card-content">
@@ -117,7 +123,7 @@
       <div class="product-about">
         <ul class="more-about">
           <li class="more-about__item">
-            <a class="more-about__link attractive_link" href="#">Подробнее</a>
+            <a class="more-about__link attractive-link" href="#">Подробнее</a>
           </li>
           <li class="more-about__item visually-hidden">
             <a class="more-about__link" href="#">Сравнить</a>
@@ -179,7 +185,7 @@
       <div class="product-about">
         <ul class="more-about">
           <li class="more-about__item">
-            <a class="more-about__link attractive_link" href="#">Подробнее</a>
+            <a class="more-about__link attractive-link" href="#">Подробнее</a>
           </li>
           <li class="more-about__item visually-hidden">
             <a class="more-about__link" href="#">Сравнить</a>
@@ -240,7 +246,7 @@
       <div class="product-about">
         <ul class="more-about">
           <li class="more-about__item">
-            <a class="more-about__link attractive_link" href="#">Подробнее</a>
+            <a class="more-about__link attractive-link" href="#">Подробнее</a>
           </li>
           <li class="more-about__item visually-hidden">
             <a class="more-about__link" href="#">Сравнить</a>
@@ -296,7 +302,7 @@
     </div>
   </section>
 
-  <section class="catalog-tiles _container">
+  <section class="catalog-tiles container">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog-tiles">
       <li class="catalog-tiles__item">
@@ -322,16 +328,16 @@
 
   <section class="benefits">
     <h2 class="visually-hidden">Наши приемущества</h2>
-    <div class="benefits-inner _container">
+    <div class="benefits-inner container">
       <ul class="benefits-titles">
         <li class="benefits-titles__item">
           <a class="benefits-titles__link benefits-titles__link--active">Доставка</a>
         </li>
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link">Гарантия</a>
+          <a class="benefits-titles__link attractive-link">Гарантия</a>
         </li>
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link">Кредит</a>
+          <a class="benefits-titles__link attractive-link">Кредит</a>
         </li>
       </ul>
       <div class="benefits-content">
@@ -351,7 +357,7 @@
     </div>
   </section>
 
-  <section class="rare-item _container">
+  <section class="rare-item container">
     <h2 class="visually-hidden">Доставка товара под заказ</h2>
     <p class="rare-item__description">Доставим редкий товар под заказ</p>
     <button class="info" type="button">
@@ -359,29 +365,23 @@
     </button>
   </section>
 
-  <section class="vendor_about _container">
+  <section class="vendor-about container">
     <h2 class="visually-hidden">Информация о продавце</h2>
     <div class="about">
       <h3 class="about__title">О нас</h3>
       <p class="about__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p class="about__description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
       <ul class="delivery-firm">
-        <li class="delivery-firm__item">
-          <a class="delivery-firm__link" href="#">Меловые линии</a>
-        </li>
-        <li class="delivery-firm__item">
-          <a class="delivery-firm__link" href="#">СДИК</a>
-        </li>
-        <li class="delivery-firm__item">
-          <a class="delivery-firm__link" href="#">ТоксБери</a>
-        </li>
+        <li class="delivery-firm__item">Меловые линии</li>
+        <li class="delivery-firm__item">СДИК</li>
+        <li class="delivery-firm__item">ТоксБери</li>
       </ul>
-      <a class="about-vendor attractive_link" href="#">Подробнее о нас</a>
+      <a class="about-vendor attractive-link" href="#">Подробнее о нас</a>
     </div>
     <div class="contacts">
       <h3 class="contacts__title">Контакты</h3>
       <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
-      <h4 class="shop__title">Интернет-магазин «Девайс»</h4>
+      <h4 class="contacts-inner-title">Интернет-магазин «Девайс»</h4>
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       <h4 class="schedule__title">Время работы</h4>
@@ -389,12 +389,12 @@
         <li class="schedule-time__item">пн—пт: с 10:00 до 22:00</li>
         <li class="schedule-time__item">сб—вс: с 10:00 до 19:00</li>
       </ul>
-      <a class="contacts-connect__link attractive_link" href="#">Напишите нам</a>
+      <a class="contacts-connect__link attractive-link" href="#">Напишите нам</a>
     </div>
 
     <section class="subscribe">
       <h2 class="visually-hidden">Подпишитесь на новости от Девайса</h2>
-      <div class="subscribe-inner _container">
+      <div class="subscribe-inner container">
         <div class="subscribe-content">
           <h3 class="subscribe-form__title">Подпишитесь на рассылку</h3>
           <p class="subscribe-content__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
@@ -414,7 +414,7 @@
 </body>
 
 <footer class="page-footer">
-  <div class="footer _container">
+  <div class="footer container">
     <div class="footer-logo logo">
       <img class="logo__img" src="images/svg/footer_logo.svg" alt="яркий логотип Девайс" width="145" height="36">
     </div>
