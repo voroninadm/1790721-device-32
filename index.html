@@ -44,54 +44,58 @@
   </div>
   <div class="basket">
     <span class="basket-counter">2</span>
-    <div class="shopping-basket">
-    <ul class="shopping-basket display-hidden">
-      <li class="shopping-basket__item ">
-        <img class="shopping-basket__img" src="" alt="">
-        <a class="shopping-basket__link" href="#">Любительская селфи-палка</a>
-        <button class="button" type="button">
-          <span class="visually-hidden">Удалить из корзины</span>
-        </button>
-      </li>
-      <li class="shopping-basket__item ">
-        <img class="shopping-basket__img" src="" alt="">
-        <a class="shopping-basket__link">Профессиональная селфи-палка</a>
-        <button class="button" type="button">
-          <span class="visually-hidden">Удалить из корзины</span>
-        </button>
-      </li>
-    </ul>
-    <ul class="basket-prepaid">
-      <li class="basket-prepaid__item">Товаров в корзине:2</li>
-      <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
-    </ul>
-    <ul class="basket-nav">
-      <li class="basket-nav__item">
-        <a class="basket-nav__link" href="#">Открыть корзину</a>
-      </li>
-    </ul>
+    <div class="shopping-basket display-hidden">
+      <ul class="shopping-basket-list">
+        <li class="shopping-basket__item ">
+          <img class="shopping-basket__img" src="" alt="">
+          <a class="shopping-basket__link" href="#">Любительская селфи-палка</a>
+          <button class="button" type="button">
+            <span class="visually-hidden">Удалить из корзины</span>
+          </button>
+        </li>
+        <li class="shopping-basket__item ">
+          <img class="shopping-basket__img" src="" alt="">
+          <a class="shopping-basket__link">Профессиональная селфи-палка</a>
+          <button class="button" type="button">
+            <span class="visually-hidden">Удалить из корзины</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="basket-prepaid">
+        <li class="basket-prepaid__item">Товаров в корзине:2</li>
+        <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
+      </ul>
+      <ul class="basket-nav">
+        <li class="basket-nav__item">
+          <a class="basket-nav__link" href="#">Открыть корзину</a>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="header-nav">
-    <p class="header-nav__title">Каталог товаров</p>
-    <ul class="header-catalog visually-hidden">
-      <li class="header-catalog__item">
-        <a class="header-catalog__link" href="#">Виртуальная реальность</a>
-      </li>
-      <li class="header-catalog__item">
-        <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
-      </li>
-      <li class="header-catalog__item">
-        <a class="header-catalog__link" href="#">Экшн-камеры</a>
-      </li>
-      <li class="header-catalogv__item">
-        <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
-      </li>
-      <li class="header-catalog__item">
-        <a class="header-catalog__link" href="#">Умные часы</a>
-      </li>
-      <li class="header-catalog__item">
-        <a class="header-catalog__link" href="#">Квадрокоптеры</a>
+    <ul class="header-nav__list">
+      <li class="header-nav__title">
+        <a class="header-nav__item" href="#">Каталог товаров</a>
+        <ul class="header-catalog display-hidden">
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="header-catalogv__item">
+            <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Умные часы</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -116,9 +120,10 @@
     <h2 class="visually-hidden">Популярные товары</h2>
     <div class="first-card card">
       <div class="card-content">
-        <span class="card-content-id">01</span>
+        <span class="card-content__id">01</span>
         <h3 class="card-content__title">Порхает как бабочка, жалит как пчела!</h3>
-        <p class="card-content__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <p class="card-content__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+          замаскированным под стандартную камеру.</p>
       </div>
       <div class="product-about">
         <ul class="more-about">
@@ -177,7 +182,7 @@
     </div>
     <div class="second-card card">
       <div class="card-content">
-        <span class="card-content-id">02</span>
+        <span class="card-content__id">02</span>
         <h3 class="card-content__title">Худеем правильно!</h3>
         <p class="card-content__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
           занятия и соблюдать диету.</p>
@@ -238,7 +243,7 @@
     </div>
     <div class="third-card card">
       <div class="card-content">
-        <span class="card-content-id">03</span>
+        <span class="card-content__id">03</span>
         <h3 class="card-content__title">Делай селфи, как Бен Стиллер!</h3>
         <p class="card-content__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
           Карл!) метров длиной и весом всего 5 кг.</p>
@@ -343,15 +348,18 @@
       <div class="benefits-content">
         <div class="first-benefit-card benefit-card">
           <h3 class="benefits-content__title">Доставка</h3>
-          <p class="benefits-content__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="benefits-content__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
         <div class="second-benefit-card benefit-card visually-hidden">
           <h3 class="benefits-content__title">Гарантия</h3>
-          <p class="benefits-content__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <p class="benefits-content__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </div>
         <div class="third-benefit-card benefit-card visually-hidden">
           <h3 class="benefits-content__title">Кредит</h3>
-          <p class="benefits-content__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          <p class="benefits-content__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
+            для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         </div>
       </div>
     </div>
@@ -369,8 +377,10 @@
     <h2 class="visually-hidden">Информация о продавце</h2>
     <div class="about">
       <h3 class="about__title">О нас</h3>
-      <p class="about__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p class="about__description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+      <p class="about__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
+        нас.</p>
+      <p class="about__description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+        компаниями:</p>
       <ul class="delivery-firm">
         <li class="delivery-firm__item">Меловые линии</li>
         <li class="delivery-firm__item">СДИК</li>
@@ -380,7 +390,8 @@
     </div>
     <div class="contacts">
       <h3 class="contacts__title">Контакты</h3>
-      <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
+      <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить
+        работоспособность покупки. </p>
       <h4 class="contacts-inner-title">Интернет-магазин «Девайс»</h4>
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <a href="tel:+78128121212">+7 (812) 812-12-12</a>
@@ -399,14 +410,14 @@
           <h3 class="subscribe-form__title">Подпишитесь на рассылку</h3>
           <p class="subscribe-content__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
             распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-      <div class="subscribe-form">
-        <form class="subscribe-form__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label><input type="text" name="visitor-email" placeholder="Ваш e-mail"></label>
-          <button class="button" type="submit">Подписаться</button>
-        </form>
-        <p class="subscribe-content__description">Это бесплатно</p>
-      </div>
-      </div>
+          <div class="subscribe-form">
+            <form class="subscribe-form__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label><input type="text" name="visitor-email" placeholder="Ваш e-mail"></label>
+              <button class="button" type="submit">Подписаться</button>
+            </form>
+            <p class="subscribe-content__description">Это бесплатно</p>
+          </div>
+        </div>
       </div>
     </section>
   </section>
@@ -416,8 +427,9 @@
 <footer class="page-footer">
   <div class="footer container">
     <div class="footer-logo logo">
-      <img class="logo__img" src="images/svg/footer_logo.svg" alt="яркий логотип Девайс" width="145" height="36">
-    </div>
+      <a class="header-logo__link">
+        <img class="logo__img" src="images/svg/header_logo.svg" alt="логотип Девайс" width="145" height="36">
+      </a>
     <div class="footer-nav">
       <div class="footer-address">
         <p class="footer-address__description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
