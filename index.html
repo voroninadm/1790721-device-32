@@ -125,17 +125,8 @@
         <p class="card-content__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.</p>
       </div>
-      <div class="product-about">
-        <ul class="more-about">
-          <li class="more-about__item">
-            <a class="more-about__link attractive-link" href="#">Подробнее</a>
-          </li>
-          <li class="more-about__item visually-hidden">
-            <a class="more-about__link" href="#">Сравнить</a>
-          </li>
-        </ul>
-      </div>
       <div class="paginator">
+        <a class="paginator__link attractive-link" href="#">Подробнее</a>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button--current" type="button">
@@ -156,10 +147,10 @@
       </div>
       <div class="product-view">
         <img class="product-img" src="#" alt="квадрокоптер c лазером">
-        <button class="slider-button slider-prev" type="button">
+        <button class="slider-button slider-button--prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
+        </button>slider-button
+        <button class="slider-button slider-button--next" type="button">
           <span class="visually-hidden">Следующее фото</span>
         </button>
       </div>
@@ -187,43 +178,8 @@
         <p class="card-content__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
           занятия и соблюдать диету.</p>
       </div>
-      <div class="product-about">
-        <ul class="more-about">
-          <li class="more-about__item">
-            <a class="more-about__link attractive-link" href="#">Подробнее</a>
-          </li>
-          <li class="more-about__item visually-hidden">
-            <a class="more-about__link" href="#">Сравнить</a>
-          </li>
-        </ul>
-      </div>
-      <div class="paginator">
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">1 cлайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button--current" type="button">
-              <span class="visually-hidden">2 слайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 слайд</span>
-            </button>
-          </li>
-        </ol>
-      </div>
       <div class="product-view">
         <img class="product-img" src="#" alt="мотивирующий фитнес-браслет">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
       </div>
       <div class="features">
         <table>
@@ -235,7 +191,6 @@
           <tbody>
           <tr>
             <td>48 часов</td>
-
           </tr>
           </tbody>
         </table>
@@ -248,43 +203,8 @@
         <p class="card-content__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
           Карл!) метров длиной и весом всего 5 кг.</p>
       </div>
-      <div class="product-about">
-        <ul class="more-about">
-          <li class="more-about__item">
-            <a class="more-about__link attractive-link" href="#">Подробнее</a>
-          </li>
-          <li class="more-about__item visually-hidden">
-            <a class="more-about__link" href="#">Сравнить</a>
-          </li>
-        </ul>
-      </div>
-      <div class="paginator">
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">1 cлайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button " type="button">
-              <span class="visually-hidden">2 слайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button--current" type="button">
-              <span class="visually-hidden">3 слайд</span>
-            </button>
-          </li>
-        </ol>
-      </div>
       <div class="product-view">
         <img class="product-img" src="#" alt="3 огромные селфи-палки">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
       </div>
       <div class="features">
         <table>
@@ -426,61 +346,51 @@
 
 <footer class="page-footer">
   <div class="footer container">
-    <div class="footer-logo logo">
-      <a class="header-logo__link">
-        <img class="logo__img" src="images/svg/header_logo.svg" alt="логотип Девайс" width="145" height="36">
-      </a>
-    <div class="footer-nav">
+    <div class="footer-nav column">
       <div class="footer-address">
+        <div class="footer-logo logo">
+          <a class="header-logo__link">
+            <img class="logo__img" src="images/svg/header_logo.svg" alt="логотип Девайс" width="145" height="36">
+          </a>
+        </div>
         <p class="footer-address__description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </div>
-      <div class="vendor-nav vendor-footer ">
-        <ul class="vendor-list">
-          <li class="vendor-list__item">
-            <a class="vendor-list__link" href="#">Доставка</a>
-          </li>
-          <li class="vendor-list__item">
-            <a class="vendor-list__link" href="#">Гарантия</a>
-          </li>
-          <li class="vendor-list__item">
-            <a class="vendor-list__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="vendor-social">
-        <ul class="vendor-social-list">
-          <li class="vendor-social-list__item">
-            <a class="vendor-social-list__link" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="vendor-social-list__item">
-            <a class="vendor-social-list__link" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="vendor-social-list__item">
-            <a class="vendor-social-list__link" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="phone">
-        <ul class="phone-list">
-          <li class="phone__item">
-            <a class="phone__link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          </li>
-        </ul>
-      </div>
-      <ul class="academy_logo">
-        <li class="academy_logo__item">
-          <a class="academy_logo__link" href="https://htmlacademy.ru/" target="_blank">
-            <img src="images/svg/footer_htmlacademy.svg" width="115" height="34" alt="HTML Academy">
+    </div>
+    <div class="column">
+      <ul class="vendor-list">
+        <li class="vendor-list__item">
+          <a class="vendor-list__link" href="#">Доставка</a>
+        </li>
+        <li class="vendor-list__item">
+          <a class="vendor-list__link" href="#">Гарантия</a>
+        </li>
+        <li class="vendor-list__item">
+          <a class="vendor-list__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="vendor-social-list">
+        <li class="vendor-social-list__item">
+          <a class="vendor-social-list__link" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="vendor-social-list__item">
+          <a class="vendor-social-list__link" href="https://www.instagram.com/htmlacademy/">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="vendor-social-list__item">
+          <a class="vendor-social-list__link" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
     </div>
+    <div class="column">
+      <a class="phone__link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      <a class="academy_logo__link" href="https://htmlacademy.ru/" target="_blank">
+        <img src="images/svg/footer_htmlacademy.svg" width="115" height="34" alt="HTML Academy">
+      </a>
+    </div>
   </div>
 </footer>
-</html>
