@@ -19,64 +19,68 @@
       <img class="logo__img" src="images/svg/header/header_logo.svg" alt="логотип Девайс" width="145" height="36">
     </a>
   </div>
-  <div class="searcher">
-    <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
-      <label><input class="searcher__input" type="text" name="search" placeholder="Поиск по сайту"></label>
-      <button class="button" type="submit">Найти</button>
-    </form>
-  </div>
-  <div class="login">
-    <ul class="login-nav">
-      <li class="login-nav__item">
-        <a class="login-nav__link" href="#">Войти</a>
-      </li>
-    </ul>
-  </div>
-  <div class="shopping">
-    <ul class="shopping-nav">
-      <li class="shopping-nav__item">
-        <a class="shopping-nav__link" href="#">Сравнить</a>
-      </li>
-      <li>
-        <a class="shopping-nav__link" href="#">Корзина</a>
-      </li>
-    </ul>
+  <div class="header-nav">
+    <div class="header-nav searcher">
+      <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="searcher__label">
+          <input class="searcher__input" type="text" name="search" placeholder="Поиск по сайту">
+        </label>
+        <button class="searcher__link link absolutely-hidden" type="submit">Найти</button>
+      </form>
+    </div>
+    <div class="header-nav login">
+      <ul class="login-nav reset-list">
+        <li class="login-nav__item">
+          <a class="login-nav__link link" href="#">Войти</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-nav shopping">
+      <ul class="shopping-nav reset-list">
+        <li class="shopping-nav__item">
+          <a class="shopping-nav__link link" href="#">Сравнить</a>
+        </li>
+        <li class="shopping-nav__item">
+          <a class="shopping-nav__link link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="basket">
     <span class="basket-counter">2</span>
-    <div class="shopping-basket display-hidden">
-      <ul class="shopping-basket-list">
-        <li class="shopping-basket__item ">
+    <div class="shopping-basket absolutely-hidden">
+      <ul class="shopping-basket-list ">
+        <li class="shopping-basket__item">
           <img class="shopping-basket__img" src="" alt="">
-          <a class="shopping-basket__link" href="#">Любительская селфи-палка</a>
+          <a class="shopping-basket__link " href="#">Любительская селфи-палка</a>
           <button class="button" type="button">
             <span class="visually-hidden">Удалить из корзины</span>
           </button>
         </li>
         <li class="shopping-basket__item ">
           <img class="shopping-basket__img" src="" alt="">
-          <a class="shopping-basket__link">Профессиональная селфи-палка</a>
+          <a class="shopping-basket__link " href="#">Профессиональная селфи-палка</a>
           <button class="button" type="button">
             <span class="visually-hidden">Удалить из корзины</span>
           </button>
         </li>
       </ul>
-      <ul class="basket-prepaid">
+      <ul class="basket-prepaid reset-list">
         <li class="basket-prepaid__item">Товаров в корзине:2</li>
         <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
       </ul>
       <ul class="basket-nav">
         <li class="basket-nav__item">
-          <a class="basket-nav__link" href="#">Открыть корзину</a>
+          <a class="basket-nav__link bold-link" href="#">Открыть корзину</a>
         </li>
       </ul>
     </div>
   </div>
   <div class="header-nav">
-    <ul class="header-nav__list">
-      <li class="header-nav__title">
-        <a class="header-nav__item" href="#">Каталог товаров</a>
-        <ul class="header-catalog display-hidden">
+    <ul class="header-nav__list reset-list">
+      <li class="header-nav__item">
+        <a class="header-nav__link link link--bold" href="#">Каталог товаров</a>
+        <ul class="header-catalog reset-list absolutely-hidden">
           <li class="header-catalog__item">
             <a class="header-catalog__link" href="#">Виртуальная реальность</a>
           </li>
@@ -100,15 +104,15 @@
     </ul>
   </div>
   <div class="vendor-nav vendor-header">
-    <ul class="vendor-list">
+    <ul class="vendor-list reset-list">
       <li class="vendor-list__item">
-        <a class="vendor-list__link" href="#">Доставка</a>
+        <a class="vendor-list__link link link--bold" href="#">Доставка</a>
       </li>
       <li class="vendor-list__item">
-        <a class="vendor-list__link" href="#">Гарантия</a>
+        <a class="vendor-list__link link link--bold" href="#">Гарантия</a>
       </li>
       <li class="vendor-list__item">
-        <a class="vendor-list__link" href="#">Контакты</a>
+        <a class="vendor-list__link link link--bold" href="#">Контакты</a>
       </li>
     </ul>
   </div>
@@ -126,8 +130,8 @@
           замаскированным под стандартную камеру.</p>
       </div>
       <div class="paginator">
-        <a class="paginator__link attractive-link" href="#">Подробнее</a>
-        <ol class="slider-pagination">
+        <a class="paginator__link link link--bold link--attractive" href="#">Подробнее</a>
+        <ol class="slider-pagination reset-list">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button--current" type="button">
               <span class="visually-hidden">1 cлайд</span>
@@ -146,16 +150,16 @@
         </ol>
       </div>
       <div class="product-view">
-        <img class="product-img" src="#" alt="квадрокоптер c лазером">
+        <img class="product-img" src="images/slider-flyer.jpg" alt="квадрокоптер c лазером" width="560" height="560">
         <button class="slider-button slider-button--prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
-        </button>slider-button
+        </button>
         <button class="slider-button slider-button--next" type="button">
           <span class="visually-hidden">Следующее фото</span>
         </button>
       </div>
       <div class="features">
-        <table>
+        <table class="features__table">
           <thead>
           <tr>
             <th>Дальность полета</th>
@@ -171,7 +175,7 @@
         </table>
       </div>
     </div>
-    <div class="second-card card">
+    <div class="second-card card visually-hidden">
       <div class="card-content">
         <span class="card-content__id">02</span>
         <h3 class="card-content__title">Худеем правильно!</h3>
@@ -179,7 +183,7 @@
           занятия и соблюдать диету.</p>
       </div>
       <div class="product-view">
-        <img class="product-img" src="#" alt="мотивирующий фитнес-браслет">
+        <img class="product-img" src="images/slider-watch.jpg" alt="мотивирующий фитнес-браслет" width="560" height="560">
       </div>
       <div class="features">
         <table>
@@ -196,7 +200,7 @@
         </table>
       </div>
     </div>
-    <div class="third-card card">
+    <div class="third-card card visually-hidden">
       <div class="card-content">
         <span class="card-content__id">03</span>
         <h3 class="card-content__title">Делай селфи, как Бен Стиллер!</h3>
@@ -204,7 +208,7 @@
           Карл!) метров длиной и весом всего 5 кг.</p>
       </div>
       <div class="product-view">
-        <img class="product-img" src="#" alt="3 огромные селфи-палки">
+        <img class="product-img" src="images/slider-selfie.jpg" alt="3 огромные селфи-палки" width="560" height="560">
       </div>
       <div class="features">
         <table>
@@ -229,7 +233,7 @@
 
   <section class="catalog-tiles container">
     <h2 class="visually-hidden">Каталог товаров</h2>
-    <ul class="catalog-tiles">
+    <ul class="catalog-tiles reset-list">
       <li class="catalog-tiles__item">
         <a class="catalog-tiles__link">Виртуальная реальность</a>
       </li>
@@ -254,15 +258,15 @@
   <section class="benefits">
     <h2 class="visually-hidden">Наши приемущества</h2>
     <div class="benefits-inner container">
-      <ul class="benefits-titles">
+      <ul class="benefits-titles reset-list">
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link benefits-titles__link--active">Доставка</a>
+          <a class="benefits-titles__link link link--bold link--attractive">Доставка</a>
         </li>
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link attractive-link">Гарантия</a>
+          <a class="benefits-titles__link link link--bold link--attractive">Гарантия</a>
         </li>
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link attractive-link">Кредит</a>
+          <a class="benefits-titles__link link link--bold link--attractive">Кредит</a>
         </li>
       </ul>
       <div class="benefits-content">
@@ -301,26 +305,26 @@
         нас.</p>
       <p class="about__description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
         компаниями:</p>
-      <ul class="delivery-firm">
+      <ul class="delivery-firm reset-list">
         <li class="delivery-firm__item">Меловые линии</li>
         <li class="delivery-firm__item">СДИК</li>
-        <li class="delivery-firm__item">ТоксБери</li>
+        <li class="delivery-firm__item">ТоксБерри</li>
       </ul>
-      <a class="about-vendor attractive-link" href="#">Подробнее о нас</a>
+      <a class="about-vendor link link--bold link--attractive" href="#">Подробнее о нас</a>
     </div>
     <div class="contacts">
       <h3 class="contacts__title">Контакты</h3>
       <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить
         работоспособность покупки. </p>
-      <h4 class="contacts-inner-title">Интернет-магазин «Девайс»</h4>
-      <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <h4 class="contacts-inner--title">Интернет-магазин «Девайс»</h4>
+      <p class="contacts-inner__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <a class="contacts-inner__phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <h4 class="schedule__title">Время работы</h4>
-      <ul class="schedule-time">
+      <ul class="schedule-time reset-list">
         <li class="schedule-time__item">пн—пт: с 10:00 до 22:00</li>
         <li class="schedule-time__item">сб—вс: с 10:00 до 19:00</li>
       </ul>
-      <a class="contacts-connect__link attractive-link" href="#">Напишите нам</a>
+      <a class="contacts-connect__link link link--bold link--attractive" href="#">Напишите нам</a>
     </div>
 
     <section class="subscribe">
@@ -332,10 +336,12 @@
             распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <div class="subscribe-form">
             <form class="subscribe-form__form" action="https://echo.htmlacademy.ru/" method="post">
-              <label><input type="text" name="visitor-email" placeholder="Ваш e-mail"></label>
-              <button class="button" type="submit">Подписаться</button>
+              <label class="subscribe-form__label">
+                <input class="subscribe-form__input" type="text" name="visitor-email" placeholder="Ваш e-mail">
+              </label>
+              <button class="subscribe-form__button link--bold" type="submit">Подписаться</button>
             </form>
-            <p class="subscribe-content__description">Это бесплатно</p>
+            <p class="subscribe-form__description">Это бесплатно</p>
           </div>
         </div>
       </div>
@@ -350,25 +356,25 @@
       <div class="footer-address">
         <div class="footer-logo logo">
           <a class="header-logo__link">
-            <img class="logo__img" src="images/svg/header/header_logo.svg" alt="логотип Девайс" width="145" height="36">
+            <img class="logo__img" src="images/svg/footer/footer_logo.svg" alt="логотип Девайс" width="145" height="36">
           </a>
         </div>
-        <p class="footer-address__description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="footer-address__description link--white">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </div>
     </div>
     <div class="column">
-      <ul class="vendor-list">
+      <ul class="vendor-list reset-list">
         <li class="vendor-list__item">
-          <a class="vendor-list__link" href="#">Доставка</a>
+          <a class="vendor-list__link link link--bold link--white" href="#">Доставка</a>
         </li>
         <li class="vendor-list__item">
-          <a class="vendor-list__link" href="#">Гарантия</a>
+          <a class="vendor-list__link link link--bold link--white" href="#">Гарантия</a>
         </li>
         <li class="vendor-list__item">
-          <a class="vendor-list__link" href="#">Контакты</a>
+          <a class="vendor-list__link link link--bold link--white" href="#">Контакты</a>
         </li>
       </ul>
-      <ul class="vendor-social-list">
+      <ul class="vendor-social-list reset-list">
         <li class="vendor-social-list__item">
           <a class="vendor-social-list__link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
@@ -387,7 +393,7 @@
       </ul>
     </div>
     <div class="column">
-      <a class="phone__link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      <a class="phone__link link link--white" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <a class="academy_logo__link" href="https://htmlacademy.ru/" target="_blank">
         <img src="images/svg/footer/footer_htmlacademy.svg" width="115" height="34" alt="HTML Academy">
       </a>
