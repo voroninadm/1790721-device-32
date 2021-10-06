@@ -49,17 +49,17 @@
   <div class="basket">
     <span class="basket-counter">2</span>
     <div class="shopping-basket absolutely-hidden">
-      <ul class="shopping-basket-list ">
-        <li class="shopping-basket__item">
+      <ul class="shopping-basket-list reset-list">
+        <li class="shopping-basket__item shopping-basket__item--light-selfie">
           <img class="shopping-basket__img" src="images/basket-light.jpg" alt="" width="41" height="43">
-          <a class="shopping-basket__link " href="#">Любительская селфи-палка</a>
+          <a class="shopping-basket__link link link--white" href="#">Любительская селфи-палка</a>
           <button class="button" type="button">
             <span class="visually-hidden">Удалить из корзины</span>
           </button>
         </li>
-        <li class="shopping-basket__item ">
+        <li class="shopping-basket__item shopping-basket__item--prof-selfie">
           <img class="shopping-basket__img" src="images/basket-prof.jpg" alt="" width="41" height="43">
-          <a class="shopping-basket__link " href="#">Профессиональная селфи-палка</a>
+          <a class="shopping-basket__link link link--white" href="#">Профессиональная селфи-палка</a>
           <button class="button" type="button">
             <span class="visually-hidden">Удалить из корзины</span>
           </button>
@@ -69,9 +69,9 @@
         <li class="basket-prepaid__item">Товаров в корзине:2</li>
         <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
       </ul>
-      <ul class="basket-nav">
+      <ul class="basket-nav reset-list">
         <li class="basket-nav__item">
-          <a class="basket-nav__link bold-link" href="#">Открыть корзину</a>
+          <a class="basket-nav__link link link--bold" href="#">Открыть корзину</a>
         </li>
       </ul>
     </div>
@@ -82,7 +82,7 @@
         <a class="header-nav__link link link--bold" href="#">Каталог товаров</a>
         <ul class="header-catalog reset-list absolutely-hidden">
           <li class="header-catalog__item">
-            <a class="header-catalog__link" href="#">Виртуальная реальность</a>
+            <a class="header-catalog__link " href="#">Виртуальная реальность</a>
           </li>
           <li class="header-catalog__item">
             <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
@@ -150,7 +150,7 @@
         </ol>
       </div>
       <div class="product-view">
-        <img class="product-img" src="images/slider-flyer.jpg" alt="квадрокоптер c лазером" width="560" height="560">
+        <img class="product-img" src="images/slider-flyer.png" alt="квадрокоптер c лазером" width="560" height="560">
         <button class="slider-button slider-button--prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
@@ -160,18 +160,14 @@
       </div>
       <div class="features">
         <table class="features__table">
-          <thead>
           <tr>
-            <th>Дальность полета</th>
-            <th>Радиус поражения</th>
+            <td class="features__table--data">800 м</td>
+            <td class="features__table--data">50 м</td>
           </tr>
-          </thead>
-          <tbody>
           <tr>
-            <td>800 м</td>
-            <td>50 м</td>
+            <td class="features__table--header">Дальность полета</td>
+            <td class="features__table--header">Радиус поражения</td>
           </tr>
-          </tbody>
         </table>
       </div>
     </div>
@@ -183,20 +179,16 @@
           занятия и соблюдать диету.</p>
       </div>
       <div class="product-view">
-        <img class="product-img" src="images/slider-watch.jpg" alt="мотивирующий фитнес-браслет" width="560" height="560">
+        <img class="product-img" src="images/slider-watch.png" alt="мотивирующий фитнес-браслет" width="560" height="560">
       </div>
       <div class="features">
-        <table>
-          <thead>
+        <table class="features__table">
           <tr>
-            <th>Без подзарядки</th>
+            <td class="features__table--data">48 часов</td>
           </tr>
-          </thead>
-          <tbody>
           <tr>
-            <td>48 часов</td>
+            <td class="features__table--header">Без подзарядки</td>
           </tr>
-          </tbody>
         </table>
       </div>
     </div>
@@ -208,24 +200,20 @@
           Карл!) метров длиной и весом всего 5 кг.</p>
       </div>
       <div class="product-view">
-        <img class="product-img" src="images/slider-selfie.jpg" alt="3 огромные селфи-палки" width="560" height="560">
+        <img class="product-img" src="images/slider-selfie.png" alt="3 огромные селфи-палки" width="560" height="560">
       </div>
       <div class="features">
-        <table>
-          <thead>
+        <table class="features__table">
           <tr>
-            <th>Длина палки</th>
-            <th>Вес палки</th>
-            <th>Материал</th>
+            <td class="features__table--data">8,5 м</td>
+            <td class="features__table--data">5 кг</td>
+            <td class="features__table--data">Карбон</td>
           </tr>
-          </thead>
-          <tbody>
           <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
+            <td class="features__table--header">Длина палки</td>
+            <td class="features__table--header">Вес палки</td>
+            <td class="features__table--header">Материал</td>
           </tr>
-          </tbody>
         </table>
       </div>
     </div>
@@ -234,22 +222,22 @@
   <section class="catalog-tiles container">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog-tiles reset-list">
-      <li class="catalog-tiles__item">
+      <li class="catalog-tiles__item catalog-tiles__item--virtual">
         <a class="catalog-tiles__link">Виртуальная реальность</a>
       </li>
-      <li class="catalog-tiles__item">
+      <li class="catalog-tiles__item catalog-tiles__item--monopod">
         <a class="catalog-tiles__link">Моноподы для селфи</a>
       </li>
-      <li class="catalog-tiles__item">
+      <li class="catalog-tiles__item catalog-tiles__item--camera">
         <a class="catalog-tiles__link">Экшн-камеры</a>
       </li>
-      <li class="catalog-tiles__item">
-        <a class="catalog-tiles__link">Фитнес-браслеты</a>
+      <li class="catalog-tiles__item catalog-tiles__item--fitbraslet">
+        <a class="catalog-tiles__link catalog-tiles__item--">Фитнес-браслеты</a>
       </li>
-      <li class="catalog-tiles__item">
+      <li class="catalog-tiles__item catalog-tiles__item--smartwatch">
         <a class="catalog-tiles__link">Умные часы</a>
       </li>
-      <li class="catalog-tiles__item">
+      <li class="catalog-tiles__item catalog-tiles__item--copter">
         <a class="catalog-tiles__link">Квадрокоптеры</a>
       </li>
     </ul>
@@ -260,13 +248,13 @@
     <div class="benefits-inner container">
       <ul class="benefits-titles reset-list">
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link link link--bold link--attractive">Доставка</a>
+          <a class="benefits-titles__link--active link link--bold" href="#">Доставка</a>
         </li>
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link link link--bold link--attractive">Гарантия</a>
+          <a class="benefits-titles__link link link--bold link--motley" href="#">Гарантия</a>
         </li>
         <li class="benefits-titles__item">
-          <a class="benefits-titles__link link link--bold link--attractive">Кредит</a>
+          <a class="benefits-titles__link link link--bold link--motley" href="#">Кредит</a>
         </li>
       </ul>
       <div class="benefits-content">
@@ -291,10 +279,7 @@
 
   <section class="rare-item container">
     <h2 class="visually-hidden">Доставка товара под заказ</h2>
-    <p class="rare-item__description">Доставим редкий товар под заказ</p>
-    <button class="info" type="button">
-      <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-    </button>
+    <a class="rare-item__link" >Доставим редкий товар под заказ</a>
   </section>
 
   <section class="vendor-about container">
@@ -310,7 +295,7 @@
         <li class="delivery-firm__item">СДИК</li>
         <li class="delivery-firm__item">ТоксБерри</li>
       </ul>
-      <a class="about-vendor link link--bold link--attractive" href="#">Подробнее о нас</a>
+      <a class="about-vendor__link link link--bold link--attractive" href="#">Подробнее о нас</a>
     </div>
     <div class="contacts">
       <h3 class="contacts__title">Контакты</h3>
@@ -326,6 +311,7 @@
       </ul>
       <a class="contacts-connect__link link link--bold link--attractive" href="#">Напишите нам</a>
     </div>
+  </section>
 
     <section class="subscribe">
       <h2 class="visually-hidden">Подпишитесь на новости от Девайса</h2>
@@ -346,7 +332,6 @@
         </div>
       </div>
     </section>
-  </section>
 </main>
 </body>
 
