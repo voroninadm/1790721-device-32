@@ -19,8 +19,8 @@
       <img class="logo__img" src="images/svg/header/header_logo.svg" alt="логотип Девайс" width="145" height="36">
     </a>
   </div>
-  <div class="header-nav">
-    <div class="header-nav searcher">
+  <div class="header-client">
+    <div class="header-searcher searcher">
       <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
         <label class="searcher__label">
           <input class="searcher__input" type="text" name="search" placeholder="Поиск по сайту">
@@ -28,26 +28,26 @@
         <button class="searcher__link link absolutely-hidden" type="submit">Найти</button>
       </form>
     </div>
-    <div class="header-nav login">
-      <ul class="login-nav reset-list">
-        <li class="login-nav__item">
-          <a class="login-nav__link link" href="#">Войти</a>
+    <div class="header-login">
+      <ul class="header-login__list reset-list">
+        <li class="header-login__item">
+          <a class="header-login__link link" href="#">Войти</a>
         </li>
       </ul>
     </div>
-    <div class="header-nav shopping">
-      <ul class="shopping-nav reset-list">
-        <li class="shopping-nav__item">
-          <a class="shopping-nav__link link" href="#">Сравнить</a>
+    <div class="header-shopping">
+      <ul class="header-shopping__list reset-list">
+        <li class="header-shopping__item">
+          <a class="header-shopping__link header-shopping__link--compare link" href="#">Сравнить</a>
         </li>
-        <li class="shopping-nav__item">
-          <a class="shopping-nav__link link" href="#">Корзина</a>
+        <li class="header-shopping__item">
+          <a class="header-shopping__link header-shopping__link--basket link" href="#">Корзина</a>
         </li>
       </ul>
     </div>
   </div>
-  <div class="basket">
-    <span class="basket-counter">2</span>
+  <div class="header-basket">
+    <span class="header-basket__counter">2</span>
     <div class="shopping-basket absolutely-hidden">
       <ul class="shopping-basket-list reset-list">
         <li class="shopping-basket__item shopping-basket__item--light-selfie">
@@ -76,79 +76,56 @@
       </ul>
     </div>
   </div>
-  <div class="header-nav">
-    <ul class="header-nav__list reset-list">
-      <li class="header-nav__item">
-        <a class="header-nav__link link link--bold" href="#">Каталог товаров</a>
-        <ul class="header-catalog reset-list absolutely-hidden">
-          <li class="header-catalog__item">
-            <a class="header-catalog__link " href="#">Виртуальная реальность</a>
-          </li>
-          <li class="header-catalog__item">
-            <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
-          </li>
-          <li class="header-catalog__item">
-            <a class="header-catalog__link" href="#">Экшн-камеры</a>
-          </li>
-          <li class="header-catalogv__item">
-            <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="header-catalog__item">
-            <a class="header-catalog__link" href="#">Умные часы</a>
-          </li>
-          <li class="header-catalog__item">
-            <a class="header-catalog__link" href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div class="vendor-nav vendor-header">
-    <ul class="vendor-list reset-list">
-      <li class="vendor-list__item">
-        <a class="vendor-list__link link link--bold" href="#">Доставка</a>
-      </li>
-      <li class="vendor-list__item">
-        <a class="vendor-list__link link link--bold" href="#">Гарантия</a>
-      </li>
-      <li class="vendor-list__item">
-        <a class="vendor-list__link link link--bold" href="#">Контакты</a>
-      </li>
-    </ul>
+
+  <div class="catalog-vendor">
+    <div class="header-nav__catalog">
+      <ul class="header-nav__list reset-list">
+        <li class="header-nav__item">
+          <a class="header-nav__link link link--bold" href="#">Каталог товаров</a>
+          <ul class="header-catalog reset-list absolutely-hidden">
+            <li class="header-catalog__item">
+              <a class="header-catalog__link " href="#">Виртуальная реальность</a>
+            </li>
+            <li class="header-catalog__item">
+              <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
+            </li>
+            <li class="header-catalog__item">
+              <a class="header-catalog__link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="header-catalogv__item">
+              <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="header-catalog__item">
+              <a class="header-catalog__link" href="#">Умные часы</a>
+            </li>
+            <li class="header-catalog__item">
+              <a class="header-catalog__link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="vendor-nav vendor-header">
+      <ul class="vendor-list reset-list">
+        <li class="vendor-list__item">
+          <a class="vendor-list__link link link--bold" href="#">Доставка</a>
+        </li>
+        <li class="vendor-list__item">
+          <a class="vendor-list__link link link--bold" href="#">Гарантия</a>
+        </li>
+        <li class="vendor-list__item">
+          <a class="vendor-list__link link link--bold" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 
-<main>
+<main class="main-page">
   <h1 class=" visually-hidden">Интернет-магазин техники "Девайс"</h1>
   <section class="slider container">
     <h2 class="visually-hidden">Популярные товары</h2>
     <div class="first-card card">
-      <div class="card-content">
-        <span class="card-content__id">01</span>
-        <h3 class="card-content__title">Порхает как бабочка, жалит как пчела!</h3>
-        <p class="card-content__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-          замаскированным под стандартную камеру.</p>
-      </div>
-      <div class="paginator">
-        <a class="paginator__link link link--bold link--attractive" href="#">Подробнее</a>
-        <ol class="slider-pagination reset-list">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button--current" type="button">
-              <span class="visually-hidden">1 cлайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 слайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 слайд</span>
-            </button>
-          </li>
-        </ol>
-      </div>
       <div class="product-view">
         <img class="product-img" src="images/slider-flyer.png" alt="квадрокоптер c лазером" width="560" height="560">
         <button class="slider-button slider-button--prev" type="button">
@@ -158,20 +135,47 @@
           <span class="visually-hidden">Следующее фото</span>
         </button>
       </div>
-      <div class="features">
-        <table class="features__table">
-          <tr>
-            <td class="features__table--data">800 м</td>
-            <td class="features__table--data">50 м</td>
-          </tr>
-          <tr>
-            <td class="features__table--header">Дальность полета</td>
-            <td class="features__table--header">Радиус поражения</td>
-          </tr>
-        </table>
+      <div class="card-content">
+        <div class="card-content__header"></div>
+        <span class="card-content__id">01</span>
+        <h3 class="card-content__title reset-list">Порхает как бабочка, жалит как пчела!</h3>
+        <p class="card-content__description reset-list">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+          замаскированным под стандартную камеру.</p>
+        <div class="paginator">
+          <a class="paginator__link link link--bold link--attractive" href="#">Подробнее</a>
+          <ol class="slider-pagination reset-list">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button--current" type="button">
+                <span class="visually-hidden">1 cлайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 слайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 слайд</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="features">
+          <table class="features__table">
+            <tr>
+              <td class="features__table--data">800 м</td>
+              <td class="features__table--data">50 м</td>
+            </tr>
+            <tr>
+              <td class="features__table--header">Дальность полета</td>
+              <td class="features__table--header">Радиус поражения</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
-    <div class="second-card card visually-hidden">
+    <div class="second-card card absolutely-hidden">
       <div class="card-content">
         <span class="card-content__id">02</span>
         <h3 class="card-content__title">Худеем правильно!</h3>
@@ -192,7 +196,7 @@
         </table>
       </div>
     </div>
-    <div class="third-card card visually-hidden">
+    <div class="third-card card absolutely-hidden">
       <div class="card-content">
         <span class="card-content__id">03</span>
         <h3 class="card-content__title">Делай селфи, как Бен Стиллер!</h3>
@@ -219,7 +223,7 @@
     </div>
   </section>
 
-  <section class="catalog-tiles container">
+  <section class="catalog-nav container">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog-tiles reset-list">
       <li class="catalog-tiles__item catalog-tiles__item--virtual">
@@ -279,7 +283,7 @@
 
   <section class="rare-item container">
     <h2 class="visually-hidden">Доставка товара под заказ</h2>
-    <a class="rare-item__link" >Доставим редкий товар под заказ</a>
+    <a class="rare-item__link">Доставим редкий товар под заказ</a>
   </section>
 
   <section class="vendor-about container">
@@ -313,25 +317,25 @@
     </div>
   </section>
 
-    <section class="subscribe">
-      <h2 class="visually-hidden">Подпишитесь на новости от Девайса</h2>
-      <div class="subscribe-inner container">
-        <div class="subscribe-content">
-          <h3 class="subscribe-form__title">Подпишитесь на рассылку</h3>
-          <p class="subscribe-content__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          <div class="subscribe-form">
-            <form class="subscribe-form__form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="subscribe-form__label">
-                <input class="subscribe-form__input" type="text" name="visitor-email" placeholder="Ваш e-mail">
-              </label>
-              <button class="subscribe-form__button link--bold" type="submit">Подписаться</button>
-            </form>
-            <p class="subscribe-form__description">Это бесплатно</p>
-          </div>
-        </div>
+  <section class="subscribe">
+    <h2 class="visually-hidden">Подпишитесь на новости от Девайса</h2>
+    <div class="subscribe-inner container">
+      <div class="subscribe-content">
+        <h3 class="subscribe-form__title reset-list">Подпишитесь на рассылку</h3>
+        <p class="subscribe-content__description reset-list">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+          распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       </div>
-    </section>
+      <div class="subscribe-form">
+        <form class="subscribe-form__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="subscribe-form__label">
+            <input class="subscribe-form__input" type="text" name="visitor-email" placeholder="Ваш e-mail">
+          </label>
+          <button class="subscribe-form__button link--bold" type="submit">Подписаться</button>
+        </form>
+        <p class="subscribe-form__description reset-list">Это бесплатно</p>
+      </div>
+    </div>
+  </section>
 </main>
 </body>
 
