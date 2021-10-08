@@ -327,9 +327,9 @@
       </div>
       <div class="subscribe-form">
         <form class="subscribe-form__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="subscribe-form__label">
-            <input class="subscribe-form__input" type="text" name="visitor-email" placeholder="Ваш e-mail">
-          </label>
+          <label class="subscribe-form__label" for="subscribe-form__input"></label>
+          <input class="subscribe-form__input" type="text" name="visitor-email" id="subscribe-form__input"
+                 placeholder="Ваш e-mail">
           <button class="subscribe-form__button link--bold" type="submit">Подписаться</button>
         </form>
         <p class="subscribe-form__description reset-list">Это бесплатно</p>
@@ -341,19 +341,17 @@
 
 <footer class="page-footer">
   <div class="footer container">
-    <div class="footer-nav column">
-      <div class="footer-address">
-        <div class="footer-logo logo">
-          <a class="header-logo__link">
-            <img class="logo__img" src="images/svg/footer/footer_logo.svg" alt="логотип Девайс" width="145" height="36">
-          </a>
-        </div>
-        <p class="footer-address__description link--white">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </div>
+    <div class="footer-logo logo">
+      <a class="header-logo__link">
+        <img class="logo__img" src="images/svg/footer/footer_logo.svg" alt="логотип Девайс" width="145" height="36">
+      </a>
     </div>
+      <div class="footer-address">
+        <p class="footer-address__description link--white reset-list">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </div>
     <div class="column">
       <ul class="vendor-list reset-list">
-        <li class="vendor-list__item">
+        <li class="vendor-list__item">0000
           <a class="vendor-list__link link link--bold link--white" href="#">Доставка</a>
         </li>
         <li class="vendor-list__item">
