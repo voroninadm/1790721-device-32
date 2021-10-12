@@ -257,8 +257,8 @@
 
 .header-basket__counter {
   position: absolute;
-  top: 10px;
-  left: 1000px;;
+  top: 40px;
+  left: 995px;
   display: block;
   width: 21px;
   height: 21px;
@@ -367,43 +367,66 @@
 }
 
 .slider-button--prev{
-  top: 200px;
-  left: 10px;
+  top: 260px;
+  left: 25px;
 }
 
 .slider-button--next{
-  top:200px;
-  left:50px;
+  top:260px;
+  left:510px;
 }
 
 .card-content{
-  padding: 120px 0 0 0;
+  padding: 110px 0 0 0;
   max-width: 560px;
 }
 
 .card-content__id {
   position: absolute;
-  top:5px;
+  top: -60px;
   left: 885px;
   font-family: "Rubik", "Verdana", sans-serif;
   font-size: 180px;
   line-height: 167%;
   color: #ffffff;
+  z-index: 1;
 }
 
 .card-content__title {
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  padding: 9px 0;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+
 }
 
 .card-content__description {
+  box-sizing: border-box;
+  padding: 10px 0 15px 0;
   font-family: "Rubik", "Verdana", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 167%;
   color: #444444;
+
+}
+
+.paginator{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px 0 ;
+}
+
+.slider-pagination{
+  width: 80px;
+  margin-right: 59px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .paginator__link{
@@ -435,7 +458,24 @@
   background: url("../images/svg/main/slider-right.svg") no-repeat 50% 50%;
 }
 
-.features__table--header{
+.features-table{
+  display: flex;
+  box-sizing: border-box;
+  padding: 55px 0 40px 0;
+}
+
+.features__item{
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+.features__item:not(:last-of-type){
+  margin-right: 20px;
+}
+
+.features__table__header{
+
   font-family: "Rubik" , "Verdana", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -443,7 +483,8 @@
   color: #444444;
 }
 
-.features__table--data{
+.features__table__data{
+  max-width: 160px;
   font-family: "Rubik" , "Verdana", sans-serif;
   font-weight: normal;
   font-size: 36px;
@@ -577,6 +618,10 @@ display: block;
 }
 
 .rare-item__link{
+  padding: 0 33px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 127%;
   text-align: center;
