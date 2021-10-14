@@ -19,15 +19,15 @@
       <img class="logo__img" src="images/svg/header/header_logo.svg" alt="логотип Девайс" width="145" height="36">
     </a>
   </div>
-  <div class="header-client">
-    <div class="header-searcher searcher">
-      <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="searcher__label">
-          <input class="searcher__input" type="text" name="search" placeholder="Поиск по сайту">
-        </label>
-        <button class="searcher__link link absolutely-hidden" type="submit">Найти</button>
-      </form>
-    </div>
+  <div class="header-searcher searcher">
+    <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
+      <label class="searcher__label">
+        <input class="searcher__input reset-list" type="text" name="search" placeholder="Поиск по сайту">
+      </label>
+      <button class="searcher__link link absolutely-hidden" type="submit">Найти</button>
+    </form>
+  </div>
+  <div class="header-nav">
     <div class="header-login">
       <ul class="header-login__list reset-list">
         <li class="header-login__item">
@@ -37,87 +37,83 @@
     </div>
     <div class="header-shopping">
       <ul class="header-shopping__list reset-list">
-        <li class="header-shopping__item">
+        <li class="header-shopping__item reset-list">
           <a class="header-shopping__link header-shopping__link--compare link" href="#">Сравнить</a>
         </li>
-        <li class="header-shopping__item">
+        <li class="header-shopping__item reset-list">
           <a class="header-shopping__link header-shopping__link--basket link" href="#">Корзина</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="header-basket">
-    <span class="header-basket__counter">2</span>
-    <div class="shopping-basket absolutely-hidden">
-      <ul class="shopping-basket-list reset-list">
-        <li class="shopping-basket__item shopping-basket__item--light-selfie">
-          <img class="shopping-basket__img" src="images/basket-light.jpg" alt="" width="41" height="43">
-          <a class="shopping-basket__link link link--white" href="#">Любительская селфи-палка</a>
-          <button class="button" type="button">
-            <span class="visually-hidden">Удалить из корзины</span>
-          </button>
-        </li>
-        <li class="shopping-basket__item shopping-basket__item--prof-selfie">
-          <img class="shopping-basket__img" src="images/basket-prof.jpg" alt="" width="41" height="43">
-          <a class="shopping-basket__link link link--white" href="#">Профессиональная селфи-палка</a>
-          <button class="button" type="button">
-            <span class="visually-hidden">Удалить из корзины</span>
-          </button>
-        </li>
-      </ul>
-      <ul class="basket-prepaid reset-list">
-        <li class="basket-prepaid__item">Товаров в корзине:2</li>
-        <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
-      </ul>
-      <ul class="basket-nav reset-list">
-        <li class="basket-nav__item">
-          <a class="basket-nav__link link link--bold" href="#">Открыть корзину</a>
+          <span class="header-basket__counter">2</span>
+          <div class="shopping-basket absolutely-hidden">
+            <ul class="shopping-basket-list reset-list">
+              <li class="shopping-basket__item shopping-basket__item--light-selfie">
+                <img class="shopping-basket__img" src="images/basket-light.jpg" alt="" width="41" height="43">
+                <a class="shopping-basket__link link link--white" href="#">Любительская селфи-палка</a>
+                <button class="button" type="button">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="shopping-basket__item shopping-basket__item--prof-selfie">
+                <img class="shopping-basket__img" src="images/basket-prof.jpg" alt="" width="41" height="43">
+                <a class="shopping-basket__link link link--white" href="#">Профессиональная селфи-палка</a>
+                <button class="button" type="button">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <ul class="basket-prepaid reset-list">
+              <li class="basket-prepaid__item">Товаров в корзине:2</li>
+              <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
+            </ul>
+            <ul class="basket-nav reset-list">
+              <li class="basket-nav__item">
+                <a class="basket-nav__link link link--bold" href="#">Открыть корзину</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="catalog-vendor">
-    <div class="header-nav__catalog">
-      <ul class="header-nav__list reset-list">
-        <li class="header-nav__item">
-          <a class="header-nav__link link link--bold" href="#">Каталог товаров</a>
-          <ul class="header-catalog reset-list absolutely-hidden">
-            <li class="header-catalog__item">
-              <a class="header-catalog__link " href="#">Виртуальная реальность</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="header-catalogv__item">
-              <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Умные часы</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="vendor-nav vendor-header">
-      <ul class="vendor-list reset-list">
-        <li class="vendor-list__item">
-          <a class="vendor-list__link link link--bold" href="#">Доставка</a>
-        </li>
-        <li class="vendor-list__item">
-          <a class="vendor-list__link link link--bold" href="#">Гарантия</a>
-        </li>
-        <li class="vendor-list__item">
-          <a class="vendor-list__link link link--bold" href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
+  <div class="header-catalog">
+    <ul class="catalog-outer reset-list">
+      <li class="catalog-outer__item">
+        <a class="catalog-outer__link link link--bold" href="#">Каталог товаров</a>
+        <ul class="header-catalog__list reset-list absolutely-hidden">
+          <li class="header-catalog__item">
+            <a class="header-catalog__link " href="#">Виртуальная реальность</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Умные часы</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="vendor-nav vendor-header">
+    <ul class="vendor-list reset-list">
+      <li class="vendor-list__item">
+        <a class="vendor-list__link link link--bold" href="#">Доставка</a>
+      </li>
+      <li class="vendor-list__item">
+        <a class="vendor-list__link link link--bold" href="#">Гарантия</a>
+      </li>
+      <li class="vendor-list__item">
+        <a class="vendor-list__link link link--bold" href="#">Контакты</a>
+      </li>
+    </ul>
   </div>
 </header>
 
@@ -226,23 +222,23 @@
   <section class="catalog-nav container">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog-tiles reset-list">
-      <li class="catalog-tiles__item catalog-tiles__item--virtual">
-        <a class="catalog-tiles__link">Виртуальная реальность</a>
+      <li class="catalog-tiles__item">
+        <a class="catalog-tiles__link catalog-tiles__link--virtual link" href="#">Виртуальная реальность</a>
       </li>
-      <li class="catalog-tiles__item catalog-tiles__item--monopod">
-        <a class="catalog-tiles__link">Моноподы для селфи</a>
+      <li class="catalog-tiles__item">
+        <a class="catalog-tiles__link catalog-tiles__link--monopod link" href="#">Моноподы для селфи</a>
       </li>
-      <li class="catalog-tiles__item catalog-tiles__item--camera">
-        <a class="catalog-tiles__link">Экшн-камеры</a>
+      <li class="catalog-tiles__item">
+        <a class="catalog-tiles__link catalog-tiles__link--camera link" href="#">Экшн-камеры</a>
       </li>
-      <li class="catalog-tiles__item catalog-tiles__item--fitbraslet">
-        <a class="catalog-tiles__link catalog-tiles__item--">Фитнес-браслеты</a>
+      <li class="catalog-tiles__item">
+        <a class="catalog-tiles__link catalog-tiles__link--fitbraslet link" href="#">Фитнес-браслеты</a>
       </li>
-      <li class="catalog-tiles__item catalog-tiles__item--smartwatch">
-        <a class="catalog-tiles__link">Умные часы</a>
+      <li class="catalog-tiles__item">
+        <a class="catalog-tiles__link catalog-tiles__link--smartwatch link" href="#">Умные часы </a>
       </li>
-      <li class="catalog-tiles__item catalog-tiles__item--copter">
-        <a class="catalog-tiles__link">Квадрокоптеры</a>
+      <li class="catalog-tiles__item">
+        <a class="catalog-tiles__link catalog-tiles__link--copter link" href="#">Квадрокоптеры</a>
       </li>
     </ul>
   </section>
@@ -262,19 +258,19 @@
         </li>
       </ul>
       <div class="benefits-content">
-        <div class="first-benefit-card benefit-card">
-          <h3 class="benefits-content__title">Доставка</h3>
-          <p class="benefits-content__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+        <div class="benefit-card benefit-card--delivery">
+          <h3 class="benefits-content__title reset-list">Доставка</h3>
+          <p class="benefits-content__description reset-list">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
-        <div class="second-benefit-card benefit-card visually-hidden">
-          <h3 class="benefits-content__title">Гарантия</h3>
-          <p class="benefits-content__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+        <div class="benefit-card benefit-card--warranty visually-hidden">
+          <h3 class="benefits-content__title reset-list">Гарантия</h3>
+          <p class="benefits-content__description reset-list">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
             переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </div>
-        <div class="third-benefit-card benefit-card visually-hidden">
-          <h3 class="benefits-content__title">Кредит</h3>
-          <p class="benefits-content__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
+        <div class="benefit-card benefit-card--credit visually-hidden">
+          <h3 class="benefits-content__title reset-list">Кредит</h3>
+          <p class="benefits-content__description re">Залезть в долговую яму стало проще! Кредитные консультанты подберут
             для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         </div>
       </div>
@@ -283,16 +279,16 @@
 
   <section class="rare-item container">
     <h2 class="visually-hidden">Доставка товара под заказ</h2>
-    <a class="rare-item__link">Доставим редкий товар под заказ</a>
+    <a class="rare-item__link link" href="#">Доставим редкий товар под заказ</a>
   </section>
 
   <section class="vendor-about container">
     <h2 class="visually-hidden">Информация о продавце</h2>
     <div class="about">
       <h3 class="about__title reset-list">О нас</h3>
-      <p class="about__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
+      <p class="about__description reset-list">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
         нас.</p>
-      <p class="about__description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+      <p class="about__description reset-list">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
         компаниями:</p>
       <ul class="delivery-firm reset-list">
         <li class="delivery-firm__item">Меловые линии</li>
@@ -303,16 +299,20 @@
     </div>
     <div class="contacts">
       <h3 class="contacts__title reset-list">Контакты</h3>
-      <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить
+      <p class="contacts__description reset-list">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить
         работоспособность покупки. </p>
-      <h4 class="contacts-inner--title reset-list">Интернет-магазин «Девайс»</h4>
-      <p class="contacts-inner__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <a class="contacts-inner__phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <h4 class="schedule__title reset-list">Время работы</h4>
-      <ul class="schedule-time reset-list">
-        <li class="schedule-time__item">пн—пт: с 10:00 до 22:00</li>
-        <li class="schedule-time__item">сб—вс: с 10:00 до 19:00</li>
-      </ul>
+      <div class="contact_inner contact-inner">
+        <h4 class="contacts-inner--title reset-list">Интернет-магазин «Девайс»</h4>
+        <p class="contacts-inner__address reset-list">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="contacts-inner__phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
+      <div class="schedule">
+        <h4 class="schedule__title reset-list">Время работы</h4>
+        <ul class="schedule-time reset-list">
+          <li class="schedule-time__item">пн—пт: с 10:00 до 22:00</li>
+          <li class="schedule-time__item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+      </div>
       <a class="contacts-connect__link link link--bold link--attractive" href="#">Напишите нам</a>
     </div>
   </section>
@@ -330,7 +330,7 @@
         <form class="subscribe-form__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscribe-form__label" for="subscribe-form__input"></label>
           <input class="subscribe-form__input" type="text" name="visitor-email" id="subscribe-form__input"
-                 placeholder="Ваш e-mail">
+                 placeholder="Ваш e-mail" required>
           <button class="subscribe-form__button link--bold" type="submit">Подписаться</button>
         </form>
         <p class="subscribe-form__description reset-list">Это бесплатно</p>
@@ -361,7 +361,7 @@
         <a class="footer-vendor-list__link link link--bold link--white" href="#">Контакты</a>
       </li>
     </ul>
-      <a class="phone__link link link--white" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+    <a class="phone__link link link--white" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
 
     <ul class="vendor-social-list reset-list">
       <li class="vendor-social-list__item">
