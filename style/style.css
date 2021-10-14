@@ -681,7 +681,6 @@
 
 /*---rare-item---*/
 .rare-item {
-  box-sizing: border-box;
   padding: 50px 0;
   background: #f0f0f0;
   background-clip: content-box;
@@ -698,7 +697,6 @@
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: 5px solid white;
   transition: 0.3s;
 }
 
@@ -732,7 +730,7 @@
 }
 
 .rare-item__link:focus{
-  border-color: #AF4FFF;
+  outline: 5px solid #AF4FFF;
 }
 
 /*----vendor-about----*/
