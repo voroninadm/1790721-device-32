@@ -13,21 +13,21 @@
 
 <body class="page-catalog">
 
-<header class="page-header container">
+<header class="page-header page-header--catalog container">
   <div class="header-logo logo">
     <a class="header-logo__link" href="index.html">
       <img class="logo__img" src="images/svg/header/header_logo.svg" alt="логотип Девайс" width="145" height="36">
     </a>
   </div>
-  <div class="header-client">
-    <div class="header-searcher searcher">
-      <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="searcher__label">
-          <input class="searcher__input" type="text" name="search" placeholder="Поиск по сайту">
-        </label>
-        <button class="searcher__link link absolutely-hidden" type="submit">Найти</button>
-      </form>
-    </div>
+  <div class="header-searcher searcher">
+    <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
+      <label class="searcher__label">
+        <input class="searcher__input reset-list" type="text" name="search" placeholder="Поиск по сайту">
+      </label>
+      <button class="searcher__link link absolutely-hidden" type="submit">Найти</button>
+    </form>
+  </div>
+  <div class="header-nav">
     <div class="header-login">
       <ul class="header-login__list reset-list">
         <li class="header-login__item">
@@ -40,87 +40,83 @@
     </div>
     <div class="header-shopping">
       <ul class="header-shopping__list reset-list">
-        <li class="header-shopping__item">
+        <li class="header-shopping__item reset-list">
           <a class="header-shopping__link header-shopping__link--compare link" href="#">Сравнить</a>
         </li>
-        <li class="header-shopping__item">
+        <li class="header-shopping__item reset-list">
           <a class="header-shopping__link header-shopping__link--basket link" href="#">Корзина</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="header-basket">
-    <span class="header-basket__counter">2</span>
-    <div class="shopping-basket absolutely-hidden">
-      <ul class="shopping-basket-list reset-list">
-        <li class="shopping-basket__item shopping-basket__item--light-selfie">
-          <img class="shopping-basket__img" src="images/basket-light.jpg" alt="" width="41" height="43">
-          <a class="shopping-basket__link link link--white" href="#">Любительская селфи-палка</a>
-          <button class="button" type="button">
-            <span class="visually-hidden">Удалить из корзины</span>
-          </button>
-        </li>
-        <li class="shopping-basket__item shopping-basket__item--prof-selfie">
-          <img class="shopping-basket__img" src="images/basket-prof.jpg" alt="" width="41" height="43">
-          <a class="shopping-basket__link link link--white" href="#">Профессиональная селфи-палка</a>
-          <button class="button" type="button">
-            <span class="visually-hidden">Удалить из корзины</span>
-          </button>
-        </li>
-      </ul>
-      <ul class="basket-prepaid reset-list">
-        <li class="basket-prepaid__item">Товаров в корзине:2</li>
-        <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
-      </ul>
-      <ul class="basket-nav reset-list">
-        <li class="basket-nav__item">
-          <a class="basket-nav__link link link--bold" href="#">Открыть корзину</a>
+          <span class="header-basket__counter">2</span>
+          <div class="shopping-basket absolutely-hidden">
+            <ul class="shopping-basket-list reset-list">
+              <li class="shopping-basket__item shopping-basket__item--light-selfie">
+                <img class="shopping-basket__img" src="images/basket-light.jpg" alt="" width="41" height="43">
+                <a class="shopping-basket__link link link--white" href="#">Любительская селфи-палка</a>
+                <button class="button" type="button">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="shopping-basket__item shopping-basket__item--prof-selfie">
+                <img class="shopping-basket__img" src="images/basket-prof.jpg" alt="" width="41" height="43">
+                <a class="shopping-basket__link link link--white" href="#">Профессиональная селфи-палка</a>
+                <button class="button" type="button">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <ul class="basket-prepaid reset-list">
+              <li class="basket-prepaid__item">Товаров в корзине:2</li>
+              <li class="basket-prepaid__item">Сумма: 2000 ₽</li>
+            </ul>
+            <ul class="basket-nav reset-list">
+              <li class="basket-nav__item">
+                <a class="basket-nav__link link link--bold" href="#">Открыть корзину</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
   </div>
 
-  <div class="catalog-vendor">
-    <div class="header-nav__catalog">
-      <ul class="header-nav__list reset-list">
-        <li class="header-nav__item">
-          <a class="header-nav__link link link--bold" href="#">Каталог товаров</a>
-          <ul class="header-catalog reset-list absolutely-hidden">
-            <li class="header-catalog__item">
-              <a class="header-catalog__link " href="#">Виртуальная реальность</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="header-catalogv__item">
-              <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Умные часы</a>
-            </li>
-            <li class="header-catalog__item">
-              <a class="header-catalog__link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="vendor-nav vendor-header">
-      <ul class="vendor-list reset-list">
-        <li class="vendor-list__item">
-          <a class="vendor-list__link link link--bold" href="#">Доставка</a>
-        </li>
-        <li class="vendor-list__item">
-          <a class="vendor-list__link link link--bold" href="#">Гарантия</a>
-        </li>
-        <li class="vendor-list__item">
-          <a class="vendor-list__link link link--bold" href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
+  <div class="header-catalog">
+    <ul class="catalog-outer reset-list">
+      <li class="catalog-outer__item">
+        <a class="catalog-outer__link link link--bold" href="#">Каталог товаров</a>
+        <ul class="header-catalog__list reset-list absolutely-hidden">
+          <li class="header-catalog__item">
+            <a class="header-catalog__link " href="#">Виртуальная реальность</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Моноподы для cелфи</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Умные часы</a>
+          </li>
+          <li class="header-catalog__item">
+            <a class="header-catalog__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="vendor-nav vendor-header">
+    <ul class="vendor-list reset-list">
+      <li class="vendor-list__item">
+        <a class="vendor-list__link link link--bold" href="#">Доставка</a>
+      </li>
+      <li class="vendor-list__item">
+        <a class="vendor-list__link link link--bold" href="#">Гарантия</a>
+      </li>
+      <li class="vendor-list__item">
+        <a class="vendor-list__link link link--bold" href="#">Контакты</a>
+      </li>
+    </ul>
   </div>
 </header>
 
