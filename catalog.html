@@ -143,26 +143,29 @@
     <div class="catalog-products-inner container">
       <div class="filter">
         <div class="filter-inner">
-          <p class="catalog-filter__header reset-list">Фильтр:</p>
+          <p class="catalog-filter__header">Фильтр:</p>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="price-filter__group filter-header">
-              <legend class="price-filter__title">Стоимость</legend>
-              <button class="range-toggle range-toggle--min" type="button">
+              <legend class="price-filter__title fieldset-title">Стоимость</legend>
+              <div class="range__bar">
+                <span class="range__bar-inner"></span>
+              </div>
+              <button class="range-toggle range-toggle--min" aria-label="от 0" type="button">
                 <span class="visually-hidden">Изменить минимальную цену.</span>
               </button>
-              <button class="range-toggle range-toggle--max" type="button">
+              <button class="range-toggle range-toggle--max" aria-label="до 5000" type="button">
                 <span class="visually-hidden">Изменить максимальную цену.</span>
               </button>
-              <label class="price-filter__label">
-                от <input class="price-filter__input" type="number" name="min-price"> ₽
-              </label>
-              <label class="price-filter__label">
-                до <input class="price-filter__input" type="number" name="max-price"> ₽
-              </label>
+              <!--<label class="price-filter__label">
+                от 0 <input class="price-filter__input price-filter__input&#45;&#45;min" type="number" name="min-price">
+              </label>-->
+<!--              <label class="price-filter__label">
+                до 5000 <input class="price-filter__input price-filter__input&#45;&#45;max" type="number" name="max-price">
+              </label>-->
             </fieldset>
 
             <fieldset class="color-filter__group reset-list">
-              <legend class="color-filter__title">Цвет</legend>
+              <legend class="color-filter__title fieldset-title">Цвет</legend>
               <ul class="color-filter__list reset-list">
                 <li class="color-filter__item">
                   <input class="color__input visually-hidden" id="checkbox-1" type="checkbox" name="black" checked>
@@ -188,7 +191,7 @@
             </fieldset>
 
             <fieldset class="wireless-filter__group reset-list">
-              <legend class="wireless-filter__title">Bluetooth</legend>
+              <legend class="wireless-filter__title fieldset-title">Bluetooth</legend>
               <ul class="wireless-filter__list reset-list">
                 <li class="wireless-filter__item">
                   <input class="wireless__input absolutely-hidden" id="radio-1" type="radio" name="product-group" value="yes"
@@ -238,7 +241,7 @@
                 <a class="product-card__link" href="#">
                   <img class="product-card__img" src="images/selfie-prof.jpg" alt="" width="360" height="380">
                 </a>
-                <h3 class="product-card__title reset-list">Профессиональная селфи-палка</h3>
+                <h3 class="product-card__title reset-list">Профессиональная <br> селфи-палка</h3>
                 <b class="product-card__price">1500 ₽</b>
                 <a class="product-card__button link--attractive" href="#">Подробнее</a>
               </div>
@@ -246,7 +249,7 @@
                 <a class="product-card__link" href="#">
                   <img class="product-card__img" src="images/selfie-water.jpg" alt="" width="360" height="380">
                 </a>
-                <h3 class="product-card__title reset-list">Непотопляемая селфи-палка</h3>
+                <h3 class="product-card__title reset-list">Непотопляемая <br> селфи-палка</h3>
                 <b class="product-card__price">2500 ₽</b>
                 <a class="product-card__button link--attractive" href="#">Подробнее</a>
               </div>
@@ -265,23 +268,25 @@
                 <li class="pagination__item">
                   <a class="link pagination__link--prev pagination__link--disabled">Назад</a>
                 </li>
-                <ol class="pagination-list__pages pages reset-list">
-                  <li class="pages__item">
-                    <a class="link pages__link pages__link--current">1</a>
-                  </li>
-                  <li class="pages__item">
-                    <a class="link pages__link" href="#">2</a>
-                  </li>
-                  <li class="pages__item">
-                    <a class="link pages__link" href="#">3</a>
-                  </li>
-                  <li class="pages__item">
-                    <a class="link pages__link" href="#">...</a>
-                  </li>
-                  <li class="pages__item">
-                    <a class="link pages__link" href="#">15</a>
-                  </li>
-                </ol>
+                <li>
+                  <ol class="pagination-list__pages pages reset-list">
+                    <li class="pages__item">
+                      <a class="link pages__link pages__link--current">1</a>
+                    </li>
+                    <li class="pages__item">
+                      <a class="link pages__link" href="#">2</a>
+                    </li>
+                    <li class="pages__item">
+                      <a class="link pages__link" href="#">3</a>
+                    </li>
+                    <li class="pages__item">
+                      <a class="link pages__link" href="#">...</a>
+                    </li>
+                    <li class="pages__item">
+                      <a class="link pages__link" href="#">15</a>
+                    </li>
+                  </ol>
+                </li>
                 <li class="pagination__item">
                   <a class="link pagination__link--next" href="#">Вперед</a>
                 </li>
