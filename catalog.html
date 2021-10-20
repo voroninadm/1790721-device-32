@@ -145,10 +145,10 @@
         <div class="filter-inner">
           <p class="catalog-filter__header">Фильтр:</p>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="price-filter__group filter-header">
+            <fieldset class="price-filter__group filter-header reset-list">
               <legend class="price-filter__title fieldset-title">Стоимость</legend>
-              <div class="range__bar">
-                <span class="range__bar-inner"></span>
+              <div class="range-scale">
+                <div class="range-bar"></div>
               </div>
               <button class="range-toggle range-toggle--min" aria-label="от 0" type="button">
                 <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -156,15 +156,15 @@
               <button class="range-toggle range-toggle--max" aria-label="до 5000" type="button">
                 <span class="visually-hidden">Изменить максимальную цену.</span>
               </button>
-              <!--<label class="price-filter__label">
-                от 0 <input class="price-filter__input price-filter__input&#45;&#45;min" type="number" name="min-price">
-              </label>-->
-<!--              <label class="price-filter__label">
-                до 5000 <input class="price-filter__input price-filter__input&#45;&#45;max" type="number" name="max-price">
-              </label>-->
+              <label class="price-filter__label price-filter__label--min">
+                <input class="price-filter__input price-filter__input--min" type="number" name="min-price" placeholder="от 0" min="0">
+              </label>
+              <label class="price-filter__label price-filter__label--max">
+                <input class="price-filter__input price-filter__input--max" type="number" name="max-price" placeholder="до 5000" min="1" max="5000">
+              </label>
             </fieldset>
 
-            <fieldset class="color-filter__group reset-list">
+            <fieldset class="color-filter__group reset-list reset-list">
               <legend class="color-filter__title fieldset-title">Цвет</legend>
               <ul class="color-filter__list reset-list">
                 <li class="color-filter__item">
@@ -204,7 +204,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="catalog-button link--attractive" type="submit">Показать</button>
+            <button class="catalog-button link--motley link--bold link" type="submit">Показать</button>
           </form>
         </div>
       </div>
