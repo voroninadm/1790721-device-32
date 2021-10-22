@@ -379,7 +379,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  transition: 0.3s;
+  transition: 1.3s;
 }
 
 .catalog-outer__item::after {
@@ -393,11 +393,13 @@
   border: 2px solid #000000;
   border-radius: 50%;
   opacity: 0.2;
+  transition: 0.5s;
 }
 
 .catalog-outer__item:hover::after{
   background: url("../images/svg/header/header-catalog-minus.svg") no-repeat 50% 50%;
   opacity: 1;
+  transform: rotate(180deg);
 }
 
 .header-catalog__item:last-of-type{
