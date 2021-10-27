@@ -286,13 +286,13 @@
   background-image: url("../images/svg/header/header-basket.svg");
 }
 
-.header-shopping__item--basket:hover .shopping-basket {
-  display: flex;
+.header-shopping__item:hover .shopping-basket {
+  display: block;
 }
 
 .shopping-basket {
-  /* чтобы показать
-   display: grid*/
+
+/*   display: block; */    /*toggle*/
   width: 320px;
   flex-direction: column;
   box-sizing: border-box;
@@ -910,7 +910,6 @@
   padding: 50px 0;
   background: #f0f0f0;
   background-clip: content-box;
-
 }
 
 .rare-item__link {
@@ -1179,6 +1178,144 @@
 .subscribe-form__description {
   margin-left: auto;
 }
+
+/*----pop-up----*/
+.main-popup{
+  position: fixed;
+  top:1px;
+  left: 1px;
+  z-index: 15;
+  border: 10px solid #000000;
+  box-sizing: border-box;
+  padding: 62px 70px;
+  background-color: #ffffff;
+}
+
+.main-popup__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 58px 0;
+}
+
+.main-popup__title{
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.main-popup__button{
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  background-color: inherit;
+  background: url("../images/svg/popup/close.svg") 50% 50% no-repeat;
+}
+
+.popup-form__list{
+  display: grid;
+  grid-template-columns: 360px 40px 160px 40px 160px;
+  grid-template-rows: repeat(3, min-content);
+}
+
+.popup-form_item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form_item:after {
+  position: absolute;
+  display: block;
+}
+
+.popup-form_item--name{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  margin: 0 0 39px 0;
+}
+
+.popup-form_item--email{
+  grid-row: 1 / 2;
+  grid-column: 3 / -1;
+  margin: 0 0 39px 0;
+}
+
+.popup-form_item--product{
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+}
+
+.popup-form_item--product-count{
+  grid-row: 2 / 3;
+  grid-column: 5 / -1;
+}
+
+.popup-form_item--button{
+  margin: 38px 0 0 0;
+  width: 200px;
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+}
+
+.popup-form_item--name:after {
+  top: 60px;
+  left: 325px;
+  content: "";
+  width: 13px;
+  height: 12px;
+  background: url("../images/svg/popup/person.svg") 50% 50% no-repeat;
+}
+
+.popup-form_item--email:after {
+  top: 60px;
+  left: 325px;
+  content: "";
+  width: 15px;
+  height: 12px;
+  background: url("../images/svg/popup/mailbox.svg") 50% 50% no-repeat;
+}
+
+.popup-form_button--product-count{
+  position: absolute;
+  top: 0;
+  left: 120px;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: url("../images/svg/popup/info.svg") 50% 50% no-repeat,
+              #FFE17F;;
+  border: none;
+}
+
+.popup-form__button{
+  border: none;
+}
+
+.popup-form__label{
+  margin: 0 0 18px 0;
+}
+
+.popup-form__input{
+  border: none;
+  background-color: #F0F0F0;
+  min-height: 60px;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+
+  font-family: "Rubik", "Verdana", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-form__input--active{
+  color: rgb(0, 0, 0);
+}
+
 
 /*---footer---*/
 .page-footer {
