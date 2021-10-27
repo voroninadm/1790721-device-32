@@ -339,40 +339,46 @@
   </section>
 
   <section class="main-popup">
-    <div class="main-popup__header">
-      <h2 class="main-popup__title reset-list">Доставка под заказ</h2>
-      <button class="main-popup__button" type="button">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
+    <div class="main-popup-inner">
+      <div class="main-popup__header">
+        <h2 class="main-popup__title reset-list">Доставка под заказ</h2>
+        <button class="main-popup__button" type="button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </div>
+      <form class="main-popup__form popup-form" action="https://echo.htmlacademy.ru/" method="post">
+        <ul class="popup-form__list reset-list">
+          <li class="popup-form_item popup-form_item--name">
+            <label class="popup-form__label popup-form__label--name" for="person-form__name">Ваше имя:</label>
+            <input class="popup-form__input popup-form__input--name" type="text" name="person-name" id="person-form__name"
+                   placeholder="Имя Фамилия" required>
+            <span class="popup-form__span popup-form__span--name">Пожалуйста, представтесь</span>
+          </li>
+          <li class="popup-form_item popup-form_item--email">
+            <label class="popup-form__label popup-form__label--email" for="person-form__email">Ваш e-mail:</label>
+            <input class="popup-form__input popup-form__input--email popup-form__input--active" type="email" name="person-email"
+                   id="person-form__email"
+                   value="krasotka92@mail.ru" required>
+            <span class="popup-form__span popup-form__span--email">Забавный у вас адрес</span>
+          </li>
+          <li class="popup-form_item popup-form_item--product">
+            <label class="popup-form__label popup-form__label--product" for="person-form__product">Что нужно привезти:</label>
+            <input class="popup-form__input popup-form__input--product" type="tel" name="person-email" id="person-form__product"
+                   placeholder="В свободной форме" required>
+          </li>
+          <li class="popup-form_item popup-form_item--product-count">
+            <label class="popup-form__label popup-form__label--product-count" for="person-form__product-count">Количество:</label>
+            <input class="popup-form__input popup-form__input--product-count popup-form__input--active" type="number" min="1"
+                   step="1" name="person-email" id="person-form__product-count"
+                   value="1" required>
+            <button class="popup-form_button--product-count" type="button"></button>
+          </li>
+          <li class="popup-form_item popup-form_item--button">
+            <button class="popup-form__button link--motley link--bold" type="submit">Отправить</button>
+          </li>
+        </ul>
+      </form>
     </div>
-    <form class="main-popup__form popup-form" action="https://echo.htmlacademy.ru/" method="post">
-      <ul class="popup-form__list reset-list">
-        <li class="popup-form_item popup-form_item--name">
-          <label class="popup-form__label popup-form__label--name" for="person-form__name">Ваше имя:</label>
-          <input class="popup-form__input popup-form__input--name" type="text" name="person-name" id="person-form__name"
-                 placeholder="Имя Фамилия" required>
-        </li>
-        <li class="popup-form_item popup-form_item--email">
-          <label class="popup-form__label popup-form__label--email" for="person-form__email">Ваш e-mail:</label>
-          <input class="popup-form__input popup-form__input--email popup-form__input--active" type="email" name="person-email" id="person-form__email"
-                 value="krasotka92@mail.ru" required>
-        </li>
-        <li class="popup-form_item popup-form_item--product">
-          <label class="popup-form__label popup-form__label--product" for="person-form__product">Что нужно привезти:</label>
-          <input class="popup-form__input popup-form__input--product" type="tel" name="person-email" id="person-form__product"
-                 placeholder="В свободной форме" required>
-        </li>
-        <li class="popup-form_item popup-form_item--product-count">
-          <label class="popup-form__label popup-form__label--product-count" for="person-form__product-count">Количество:</label>
-          <input class="popup-form__input popup-form__input--product-count popup-form__input--active" type="number" min="1" step="1" name="person-email" id="person-form__product-count"
-                 value="1" required>
-          <button class="popup-form_button--product-count" type="button"></button>
-        </li>
-        <li class="popup-form_item popup-form_item--button">
-          <button class="popup-form__button link--motley link--bold" type="submit">Отправить</button>
-        </li>
-      </ul>
-    </form>
   </section>
 </main>
 </body>
