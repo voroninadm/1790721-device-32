@@ -338,7 +338,7 @@
     </div>
   </section>
 
-  <section class="main-popup">
+  <section class="main-popup main-popup--close">
     <div class="main-popup-inner">
       <div class="main-popup__header">
         <h2 class="main-popup__title reset-list">Доставка под заказ</h2>
@@ -351,8 +351,8 @@
           <li class="popup-form_item popup-form_item--name">
             <label class="popup-form__label popup-form__label--name" for="person-form__name">Ваше имя:</label>
             <input class="popup-form__input popup-form__input--name" type="text" name="person-name" id="person-form__name"
-                   placeholder="Имя Фамилия" required>
-            <span class="popup-form__span popup-form__span--name">Пожалуйста, представтесь</span>
+                   placeholder="Имя Фамилия">
+            <span class="popup-form__span popup-form__span--name">Пожалуйста, представьтесь</span>
           </li>
           <li class="popup-form_item popup-form_item--email">
             <label class="popup-form__label popup-form__label--email" for="person-form__email">Ваш e-mail:</label>
@@ -367,10 +367,13 @@
                    placeholder="В свободной форме" required>
           </li>
           <li class="popup-form_item popup-form_item--product-count">
+
             <label class="popup-form__label popup-form__label--product-count" for="person-form__product-count">Количество:</label>
             <input class="popup-form__input popup-form__input--product-count popup-form__input--active" type="number" min="1"
                    step="1" name="person-email" id="person-form__product-count"
                    value="1" required>
+              <button class="input-control__button input-control__button--minus"></button>
+              <button class="input-control__button input-control__button--plus"></button>
             <button class="popup-form_button--product-count" type="button"></button>
           </li>
           <li class="popup-form_item popup-form_item--button">

@@ -147,20 +147,25 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="price-filter__group filter-header reset-list">
               <legend class="price-filter__title fieldset-title">Стоимость</legend>
-              <div class="range-scale">
-                <div class="range-bar"></div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 119px">
+                    <button class="range-toggle range-toggle--min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle range-toggle--max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <button class="range-toggle range-toggle--min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle range-toggle--max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
-              <label class="price-filter__label price-filter__label--min">
-                <input class="price-filter__input price-filter__input--min" type="number" name="min-price" placeholder="от 0" min="0">
+              <label class="price-filter__label price-filter__label--min">от
+                <input class="price-filter__input price-filter__input--min" type="number" name="min-price" value="0"
+                       min="0">
               </label>
-              <label class="price-filter__label price-filter__label--max">
-                <input class="price-filter__input price-filter__input--max" type="number" name="max-price" placeholder="до 5000" min="1" max="5000">
+              <label class="price-filter__label price-filter__label--max">до
+                <input class="price-filter__input price-filter__input--max" type="number" name="max-price" value="5000"
+                       min="1" max="5000">
               </label>
             </fieldset>
 
@@ -230,7 +235,7 @@
           <div class="product-card-inner">
             <div class="product-card-tiles">
               <div class="product-card">
-                <a class="product-card__link" >
+                <a class="product-card__link">
                   <img class="product-card__img" src="images/selfie-light.jpg" alt="" width="360" height="380">
                 </a>
                 <h3 class="product-card__title reset-list">Любительская селфи-палка</h3>
@@ -238,7 +243,7 @@
                 <a class="product-card__button link--motley link--bold link" href="#">Подробнее</a>
               </div>
               <div class="product-card">
-                <a class="product-card__link" >
+                <a class="product-card__link">
                   <img class="product-card__img" src="images/selfie-prof.jpg" alt="" width="360" height="380">
                 </a>
                 <h3 class="product-card__title reset-list">Профессиональная <br> селфи-палка</h3>
