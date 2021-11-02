@@ -23,8 +23,9 @@
     <form class="searcher__form searcher__form--unactive" action="https://echo.htmlacademy.ru/" method="get">
       <label class="searcher__label">
         <input class="searcher__input reset-list" type="text" name="search" placeholder="Поиск по сайту">
+        <button class="searcher__button absolutely-hidden" type="submit">Найти</button>
       </label>
-      <button class="searcher__button absolutely-hidden" type="submit">Найти</button>
+
     </form>
   </div>
   <div class="header-nav">
@@ -46,15 +47,17 @@
           <div class="shopping-basket shopping-basket--closed">
             <ul class="shopping-basket-list reset-list">
               <li class="shopping-basket__item shopping-basket__item--light-selfie">
-                <img class="shopping-basket__img" src="images/basket-light.jpg" alt="" width="41" height="43">
-                <a class="shopping-basket__link link link--white" href="#">Любительская селфи-палка</a>
+                <a class="shopping-basket__link link link--white" href="#">Любительская селфи-палка
+                  <img class="shopping-basket__img" src="images/basket-light.jpg" alt="" width="41" height="43">
+                </a>
                 <button class="shopping-basket__button" type="button">
                   <span class="visually-hidden">Удалить из корзины</span>
                 </button>
               </li>
               <li class="shopping-basket__item shopping-basket__item--prof-selfie">
-                <img class="shopping-basket__img" src="images/basket-prof.jpg" alt="" width="41" height="43">
-                <a class="shopping-basket__link link link--white" href="#">Профессиональная селфи-палка</a>
+                <a class="shopping-basket__link link link--white" href="#">Профессиональная селфи-палка
+                  <img class="shopping-basket__img" src="images/basket-prof.jpg" alt="" width="41" height="43">
+                </a>
                 <button class="shopping-basket__button" type="button">
                   <span class="visually-hidden">Удалить из корзины</span>
                 </button>
@@ -66,7 +69,7 @@
             </ul>
             <ul class="basket-nav reset-list">
               <li class="basket-nav__item">
-                <a class="basket-nav__link link link--bold" href="index.html">Открыть корзину</a>
+                <a class="basket-nav__link link link--bold" href="#">Открыть корзину</a>
               </li>
             </ul>
           </div>
@@ -338,7 +341,7 @@
     </div>
   </section>
 
-  <section class="main-popup main-popup--close">
+  <section class="main-popup main-popup--closed">
     <div class="main-popup-inner">
       <div class="main-popup__header">
         <h2 class="main-popup__title reset-list">Доставка под заказ</h2>
@@ -372,9 +375,10 @@
             <input class="popup-form__input popup-form__input--product-count popup-form__input--active" type="number" min="1"
                    step="1" name="person-email" id="person-form__product-count"
                    value="1" required>
-              <button class="input-control__button input-control__button--minus"></button>
-              <button class="input-control__button input-control__button--plus"></button>
+              <button class="input-control__button input-control__button--minus" type="button"></button>
+              <button class="input-control__button input-control__button--plus" type="button"></button>
             <button class="popup-form_button--product-count" type="button"></button>
+            <span class="popup-form__tooltip ">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
           </li>
           <li class="popup-form_item popup-form_item--button">
             <button class="popup-form__button link--motley link--bold" type="submit">Отправить</button>

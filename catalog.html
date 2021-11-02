@@ -23,8 +23,8 @@
     <form class="searcher__form" action="https://echo.htmlacademy.ru/" method="get">
       <label class="searcher__label">
         <input class="searcher__input reset-list" type="text" name="search" placeholder="Поиск по сайту">
+        <button class="searcher__button absolutely-hidden" type="submit">Найти</button>
       </label>
-      <button class="searcher__link link absolutely-hidden" type="submit">Найти</button>
     </form>
   </div>
   <div class="header-nav">
@@ -147,26 +147,24 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="price-filter__group filter-header reset-list">
               <legend class="price-filter__title fieldset-title">Стоимость</legend>
-              <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 119px">
                     <button class="range-toggle range-toggle--min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
+                    <label class="price-filter__label price-filter__label--min" style="top: 16px; left: -5px;">от
+                      <input class="price-filter__input price-filter__input--min" type="number" name="min-price" value="0"
+                             min="0">
+                    </label>
                     <button class="range-toggle range-toggle--max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
+                      <label class="price-filter__label price-filter__label--max" style="top: 16px; left: 91px">до
+                        <input class="price-filter__input price-filter__input--max" type="number" name="max-price" value="5000"
+                               min="1" max="5000">
+                      </label>
                   </div>
                 </div>
-              </div>
-              <label class="price-filter__label price-filter__label--min">от
-                <input class="price-filter__input price-filter__input--min" type="number" name="min-price" value="0"
-                       min="0">
-              </label>
-              <label class="price-filter__label price-filter__label--max">до
-                <input class="price-filter__input price-filter__input--max" type="number" name="max-price" value="5000"
-                       min="1" max="5000">
-              </label>
             </fieldset>
 
             <fieldset class="color-filter__group reset-list reset-list">
@@ -199,12 +197,12 @@
               <legend class="wireless-filter__title fieldset-title">Bluetooth</legend>
               <ul class="wireless-filter__list reset-list">
                 <li class="wireless-filter__item">
-                  <input class="wireless__input absolutely-hidden" id="radio-1" type="radio" name="product-group" value="yes"
+                  <input class="wireless__input visually-hidden" id="radio-1" type="radio" name="product-group" value="yes"
                          checked>
                   <label class="wireless__label" for="radio-1">Есть</label>
                 </li>
                 <li class="wireless-filter__item">
-                  <input class="wireless__input absolutely-hidden" id="radio-2" type="radio" name="product-group" value="no">
+                  <input class="wireless__input visually-hidden" id="radio-2" type="radio" name="product-group" value="no">
                   <label class="wireless__label" for="radio-2">Нет</label>
                 </li>
               </ul>

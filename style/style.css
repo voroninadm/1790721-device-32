@@ -176,6 +176,15 @@ input[type="number"] {
   left: 60px;
 }
 
+.header-logo__link {
+  border-radius: 20px;
+}
+
+.header-logo__link:focus-visible{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 5px;
+}
+
 .header-searcher {
   position: relative;
   padding: 10px 0;
@@ -184,6 +193,7 @@ input[type="number"] {
   font-weight: 400;
   line-height: 19px;
   color: #000000;
+
 }
 
 .searcher__label::before {
@@ -221,7 +231,7 @@ input[type="number"] {
   opacity: 0.6;
 }
 
-.searcher__input:focus {
+.searcher__input:focus-visible {
   outline: 2px solid #AF4FFF;
   opacity: 1;
 }
@@ -235,6 +245,7 @@ input[type="number"] {
 }
 
 .searcher__button{
+  display: none;
   position: absolute;
   top: 10px;
   left: 361px;
@@ -271,8 +282,17 @@ input[type="number"] {
   display: block;
 }
 
-.searcher__form--active .searcher__input{
+.searcher__input:not(:placeholder-shown){
   outline: 2px solid black;
+  opacity: 1;
+}
+
+.searcher__input:not(:placeholder-shown) .searcher__button{
+  display: block;
+}
+
+.searcher__input:not(:placeholder-shown) ~ .searcher__button{
+  display: block;
 }
 
 
@@ -344,6 +364,7 @@ input[type="number"] {
   outline: 2px solid #AF4FFF;
   outline-offset: 10px;
   border-radius: 20px;
+  opacity: 1;
 }
 
 .header-shopping__link{
@@ -400,9 +421,8 @@ input[type="number"] {
   width: 320px;
   flex-direction: column;
   box-sizing: border-box;
-
   position: absolute;
-  top: 83px;
+  top: 79px;
   left: 860px;
   z-index: 10;
 
@@ -450,8 +470,7 @@ input[type="number"] {
 }
 
 .shopping-basket__item{
-  display: grid;
-  grid-template-columns: 41px auto auto;
+  display: flex;
   column-gap: 20px;
   box-sizing: border-box;
   padding: 20px;
@@ -462,19 +481,63 @@ input[type="number"] {
 }
 
 .shopping-basket__img{
+  order: -1;
   margin-right: 23px;
 }
 
 .shopping-basket__link{
+  display: flex;
   padding: 0 20px 0 0;
+  outline: none;
+  align-self: end;
+}
+
+.shopping-basket__link:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.shopping-basket__link:hover .shopping-basket__img{
+  opacity: 0.6 ;
+}
+
+.shopping-basket__link:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.shopping-basket__link:active .shopping-basket__img{
+  opacity: 0.3 ;
+}
+
+.shopping-basket__link:focus-visible{
+  color: #AF4FFF;
+}
+
+.shopping-basket__link:focus-visible .shopping-basket__img{
+  outline: 5px solid #AF4FFF;
 }
 
 .shopping-basket__button{
-  box-sizing: border-box;
-  padding: 5px;
-  border: none;
+  order: 3;
+  width: 20px;
+  height: 20px;
+  transform: translate(5px, 5px);
+  border: none ;
+  border-radius: 50%;
   background-color: inherit;
+  cursor: pointer;
   background: url("../images/svg/header/basket-deleter.svg") no-repeat 50% 50%;
+}
+
+.shopping-basket__button:hover{
+  opacity: 0.6;
+}
+
+.shopping-basket__button:active{
+  opacity: 0.3;
+}
+
+.shopping-basket__button:focus-visible{
+  outline: 5px solid #AF4FFF;
 }
 
 .basket-prepaid{
@@ -507,6 +570,22 @@ input[type="number"] {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
+  outline: none;
+  border: none;
+}
+
+.basket-nav__link:hover{
+  background-color: #FFE17F;
+  color: #000000;
+}
+
+.basket-nav__link:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.basket-nav__link:focus-visible{
+  outline: 5px solid #AF4FFF;
+  outline-offset: -1px;
 }
 
 .catalog-outer__item{
@@ -1319,7 +1398,7 @@ input[type="number"] {
   border: none;
 }
 
-.subscribe-form__input--active {
+.subscribe-form__input:not(:placeholder-shown) {
   border-bottom: 3px solid rgb(0, 0, 0);
   opacity: 1;
 }
@@ -1338,6 +1417,7 @@ input[type="number"] {
   border: 3px solid #d8d8d8;
   color: #000000;
   transition: 0.3s;
+  outline: none;
 }
 
 .subscribe-form__button:focus {
@@ -1376,7 +1456,7 @@ input[type="number"] {
   z-index: 10;
 }
 
-.main-popup--close{
+.main-popup--closed{
   display: none;
 }
 
@@ -1409,10 +1489,24 @@ input[type="number"] {
   height: 26px;
   box-sizing: border-box;
   padding: 5px;
+  border-radius: 50%;
   border: none;
   background-color: inherit;
   background: url("../images/svg/popup/close.svg") 50% 50% no-repeat;
   cursor: pointer;
+}
+
+.main-popup__button:hover{
+  opacity: 0.6;
+}
+
+.main-popup__button:active{
+  opacity: 0.3;
+}
+
+.main-popup__button:focus-visible{
+  outline: 5px solid #AF4FFF;
+  outline-offset: 7px;
 }
 
 .popup-form__list{
@@ -1493,6 +1587,39 @@ input[type="number"] {
   cursor: pointer;
 }
 
+.popup-form_button--product-count:hover + .popup-form__tooltip{
+  display: block;
+}
+
+.popup-form__tooltip{
+  display: none;
+  position: absolute;
+  width: 164px;
+  top: 40px;
+  left: -21px;
+  z-index: 1;
+  padding: 19px;
+  background-color: black;
+  color: white;
+  font-family: "Rubik", "Verdana", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popup-form__tooltip:before{
+  position: absolute;
+  top: -10px;
+  left: 140px;
+  width: 0;
+  height: 0;
+  content: "";
+  display: block;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #000000;
+}
+
 .popup-form__button{
   border: none;
 }
@@ -1543,20 +1670,52 @@ input[type="number"] {
   width: 50px;
   height: 50px;
   border: none;
+  border-radius: 50%;
+
   background-color: inherit;
   cursor: pointer;
+  opacity: 0.3;
+}
+
+.input-control__button:hover{
+  opacity: 1;
+}
+
+.input-control__button:active{
+  opacity: 0.1;
+}
+
+.input-control__button:focus-visible{
+  outline: 2px solid #AF4FFF;
+  outline-offset: -10px;
 }
 
 .input-control__button--minus{
   top: 40px;
-  left: -1px;
-  background: url("../images/svg/popup/minus.svg") 60% 50% no-repeat;
+  left: 6px;
+  background: url("../images/svg/popup/minus.svg") 50% 50% no-repeat;
 }
 
 .input-control__button--plus{
   top: 40px;
   left: 108px;
   background: url("../images/svg/popup/plus.svg") 50% 50% no-repeat;
+}
+
+.main-popup input:hover{
+  background: #EBEBEB;
+}
+
+.main-popup input:focus-visible{
+  outline: 5px solid #AF4FFF;
+}
+
+.main-popup input:active{
+  outline: 3px solid #000000;
+}
+
+.main-popup--error{
+  outline: 3px solid #FF3D3D
 }
 
 
@@ -1584,6 +1743,13 @@ input[type="number"] {
   position: relative;
   grid-column: span 3;
   padding: 0 0 35px 0;
+}
+
+.footer-logo__link:focus-within{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 10px;
+  border-radius: 20px;
+  opacity: 1;
 }
 
 .footer-vendor-list {
@@ -1786,7 +1952,6 @@ input[type="number"] {
 
 .breadcrumbs__link:focus-visible{
   outline: 5px solid #AF4FFF;
-/*  outline-offset: 3px;*/
 }
 
 .breadcrumbs__link--active{
@@ -1897,12 +2062,6 @@ input[type="number"] {
   background-color: #000000;
 }
 
-.price-filter__label{
-  font-size: 15px;
-  line-height: 18px;
-  opacity: 0.3;
-}
-
 .range-scale{
   position: relative;
   height: 2px;
@@ -1919,26 +2078,59 @@ input[type="number"] {
 
 .range-toggle{
   position: absolute;
+  top: 2px;
   font-size: 0;
   border: 2px solid #000000;
   width: 18px;
   height: 18px;
-  border-radius: 100%;
+  border-radius: 50%;
   left: 0 ;
   margin-top: -10px;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.3s;
+}
+
+.range-toggle:active{
+  background-color: #000000;
 }
 
 .range-toggle--min{
-  top: 2px;
   left: 0;
 }
 
 .range-toggle--max{
-  top: 2px;
   left: 95%;
 }
 
+.range-toggle:focus-visible{
+  color: #AF4FFF;
+}
+
+.range-toggle:focus-visible {
+  border: 2px solid #AF4FFF;
+}
+
+.range-toggle:focus-visible + .price-filter__label{
+  color: #AF4FFF;
+}
+
+.range-toggle:active + .price-filter__label{
+  color: black;
+}
+
+
+.price-filter__label{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .price-filter__input{
+  margin-left: 3px;
   border:none;
   background-color: inherit;
   box-sizing: border-box;
@@ -1948,20 +2140,8 @@ input[type="number"] {
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
-}
-
-.price-filter__label{
-  position: absolute;
-}
-
-.price-filter__label--min{
-  top: 16px;
-  left: -5px;
-}
-
-.price-filter__label--max{
-  top: 16px;
-  left: 91px;
+  color: inherit;
+  outline: none;
 }
 
 .color-filter__group{
@@ -1997,13 +2177,16 @@ input[type="number"] {
   margin: 0 0 0 37px;
 }
 
-.color__label::before{
-  transform: translateY(8px);
+.color__label:hover{
+  opacity: 0.5;
+}
+
+.color__label:active{
+  opacity: 0.2;
 }
 
 .color__label:before {
   position: absolute;
-  transform: translateX(3px);
   left:0;
   display: block;
   vertical-align: center;
@@ -2014,11 +2197,21 @@ input[type="number"] {
   border: 2px solid #000000;
   border-radius: 3px;
   opacity: 0.2;
-  background-size: 50% 50%;
+  transform: translate(2px, -1px);
 }
 
 .color__input:checked + label::before {
-  background: url("../images/svg/catalog/filter-ok.svg") 50% 50% no-repeat;
+   background: url("../images/svg/catalog/filter-ok.svg") 50% 50% no-repeat;
+  opacity: 1;
+}
+
+.color__input:focus-visible + label{
+  color: #AF4FFF;
+}
+
+.color__input:checked:focus-visible + label:before{
+  border: 2px solid  #AF4FFF;
+  background: url("../images/svg/catalog/filter-ok-violet.svg") 50% 50% no-repeat;
   opacity: 1;
 }
 
@@ -2051,6 +2244,14 @@ input[type="number"] {
   margin: 0 0 0 40px;
 }
 
+.wireless__label:hover{
+  opacity: 0.5;
+}
+
+.wireless__label:active{
+  opacity: 0.2;
+}
+
 .wireless__label::before {
   position: absolute;
   top: -6px;
@@ -2080,13 +2281,30 @@ input[type="number"] {
   border-radius: 50%;
 }
 
-.wireless__input:checked + label:before {
+.wireless-filter__item:focus{
+  background-color: #ff2c51;
+}
+
+.wireless__input:checked + label::before {
   opacity: 1;
 }
 
 .wireless__input:checked + label::after {
   display: block;
 }
+
+.wireless__input:focus-visible + label{
+  color: #AF4FFF;
+}
+
+.wireless__input:focus-visible + label::before{
+  border-color: #AF4FFF;
+}
+
+.wireless__input:focus-visible + label::after{
+  background-color: #AF4FFF;
+}
+
 
 .catalog-button{
   border: none;
@@ -2364,8 +2582,8 @@ input[type="number"] {
 }
 
 .pagination-show-more:hover{
-  border-color: #000000;contacts-inner__phone
-  cursor: pointer;contacts-inner__phone
+  border-color: #000000;
+  cursor: pointer;
 }
 
 .pagination-show-more:active{
