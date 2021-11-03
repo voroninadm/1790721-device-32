@@ -1199,6 +1199,10 @@
   opacity: 1;
 }
 
+.rare-item__link:active{
+  opacity: 0.3;
+}
+
 .rare-item__link:focus {
   outline: 5px solid #AF4FFF;
 }
