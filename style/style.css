@@ -598,6 +598,7 @@
   box-sizing: border-box;
   align-items: center;
   border-radius: 20px;
+  transition: 0.3s;
 }
 
 .catalog-outer__link::after {
@@ -635,9 +636,13 @@
   opacity: 0.3;
 }
 
-.catalog-outer__link:focus {
+.catalog-outer__link:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 15px;
+}
+
+.catalog-outer__item:focus-within .header-catalog__list{
+  display: grid;
 }
 
 .header-catalog__item:last-of-type {
@@ -649,8 +654,7 @@
 }
 
 .header-catalog__list {
-  /*  чтобы показать блок
-    display: grid;  */
+/*  display: grid;*/
   position: absolute;
   top: 140px;
   left: 0;
@@ -670,6 +674,10 @@
   display: flex;
   box-sizing: border-box;
   align-items: center;
+}
+
+.header-catalog__item:focus-within{
+  outline: 2px solid transparent;
 }
 
 .header-catalog__link {
