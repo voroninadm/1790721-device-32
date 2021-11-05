@@ -298,6 +298,7 @@
 
 .header-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   font-family: "Rubik", "Verdana", sans-serif;
@@ -354,6 +355,11 @@
 
 .header-login__link:focus {
   outline: none;
+}
+
+.header-shopping{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-shopping__link:focus-within {
@@ -717,8 +723,9 @@ display: grid;*/
 }
 
 .vendor-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
 }
 
 .vendor-list__item {
