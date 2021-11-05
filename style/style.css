@@ -248,13 +248,13 @@
 .searcher__button {
   position: absolute;
   top: 10px;
-  left: 361px;
+  left: 362px;
   display: none;
   min-width: 140px;
   box-sizing: border-box;
-  padding: 10px 5px;
-  outline: 2px solid black;
+  padding: 11px 5px;
   border: none;
+  border-left: 2px solid #000000;
   border-radius: 0 20px 20px 0;
   font-family: inherit;
   font-style: normal;
@@ -492,6 +492,7 @@
 
 .shopping-basket__link {
   display: flex;
+  align-items: center;
   padding: 0 20px 0 0;
   align-self: end;
   outline: none;
