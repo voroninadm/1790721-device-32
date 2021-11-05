@@ -524,7 +524,7 @@
 
 .shopping-basket__button {
   width: 20px;
-  height: 20px;
+  height: 17px;
   order: 3;
   transform: translate(5px, 5px);
   border: none;
@@ -543,7 +543,8 @@
 }
 
 .shopping-basket__button:focus-visible {
-  outline: 5px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .basket-prepaid {
@@ -603,7 +604,7 @@
 .catalog-outer__link {
   position: relative;
   z-index: 4;
-  width: 240px;
+  width: 227px;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -653,6 +654,7 @@
 
 .catalog-outer__item:focus-within .header-catalog__list{
   display: grid;
+  transition: 0.3s;
 }
 
 .header-catalog__item:last-of-type {
@@ -661,10 +663,12 @@
 
 .catalog-outer__item:hover .header-catalog__list {
   display: grid;
+  transition: 0.3s;
 }
 
 .header-catalog__list {
-/*  display: grid;*/
+/* Для открытия окна
+display: grid;*/
   position: absolute;
   top: 140px;
   left: 0;
@@ -678,6 +682,7 @@
   column-gap: 30px;
   row-gap: 1px;
   background-color: #FFE17F;
+  transition: 0.3s;
 }
 
 .header-catalog__item {
