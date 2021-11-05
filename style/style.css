@@ -663,7 +663,6 @@
 
 .catalog-outer__item:hover .header-catalog__list {
   display: grid;
-  transition: 0.3s;
 }
 
 .header-catalog__list {
@@ -682,7 +681,7 @@ display: grid;*/
   column-gap: 30px;
   row-gap: 1px;
   background-color: #FFE17F;
-  transition: 0.3s;
+
 }
 
 .header-catalog__item {
