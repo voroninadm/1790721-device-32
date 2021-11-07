@@ -161,7 +161,7 @@
   display: grid;
   grid-template-columns: 540px auto;
   grid-template-rows: repeat(2, min-content);
-  row-gap: 22px;
+  row-gap: 25px;
   padding: 30px 60px;
   box-sizing: border-box;
   align-items: center;
@@ -602,11 +602,6 @@
   outline-offset: -1px;
 }
 
-.catalog-outer__item {
-  padding: 5px 0;
-  box-sizing: border-box;
-}
-
 .catalog-outer__link {
   position: relative;
   z-index: 4;
@@ -809,7 +804,7 @@ display: grid;*/
   position: relative;
   z-index: 2;
   box-sizing: border-box;
-  padding: 12px 0;
+  padding: 10px 0 12px 0;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -828,7 +823,7 @@ display: grid;*/
 
 .paginator {
   display: flex;
-  padding: 15px 0;
+  padding: 16px 0;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -974,7 +969,7 @@ display: grid;*/
   vertical-align: center;
   width: 160px;
   height: 160px;
-  margin: 0 0 33px 0;
+  margin: 0 0 31px 0;
   content: "";
 }
 
@@ -1039,7 +1034,7 @@ display: grid;*/
 /*---benefits---*/
 .benefits {
   min-height: 290px;
-  padding: 115px 0 37px 0;
+  padding: 117px 0 37px 0;
   background-color: #f0f0f0;
   background-clip: content-box;
 }
@@ -1238,7 +1233,7 @@ display: grid;*/
 .contacts {
   position: relative;
   display: grid;
-  grid-template-rows: 67px 62px 108px 129px 50px;
+  grid-template-rows: 67px 62px 107px 129px 50px;
   row-gap: 28px;
   box-sizing: border-box;
   padding: 0 40px 0 0;
@@ -1246,6 +1241,7 @@ display: grid;*/
 
 .about__title,
 .contacts__title {
+  font-family: "Raleway", "Verdana", sans-serif;
   max-width: 560px;
   font-size: 50px;
   line-height: 100%;
@@ -1255,7 +1251,7 @@ display: grid;*/
 .contacts::before,
 .about::before {
   position: absolute;
-  top: -49px;
+  top: -50px;
   display: block;
   width: 80px;
   height: 7px;
@@ -1328,7 +1324,7 @@ display: grid;*/
 .subscribe-form__title {
   box-sizing: border-box;
   max-width: 560px;
-  padding: 0 145px 0 0;
+  padding: 3px 145px 0 0;
   font-size: 50px;
   line-height: 100%;
   color: #000000;
@@ -1718,7 +1714,7 @@ display: grid;*/
 /*---footer---*/
 .page-footer {
   box-sizing: border-box;
-  padding: 62px 0 61px 0;
+  padding: 65px 0 61px 0;
   font-family: "Rubik", "Verdana", sans-serif;
   font-weight: normal;
   font-size: 16px;
