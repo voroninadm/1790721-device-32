@@ -2618,9 +2618,9 @@ display: grid;*/
 
 .pages {
   display: flex;
-  width: 169px;
+  width: 180px;
   justify-content: space-between;
-  transform: translateX(15px);
+  transform: translateX(22px);
 }
 
 .pages__link {
