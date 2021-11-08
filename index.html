@@ -5,7 +5,8 @@
   <meta name="description" content="Сайт, созданный учеником 1 курса HTML Academy. Девайс">
   <meta name="keywords"
         content="интернет-магазин гаджетов, дроны, квадрокоптеры, селфи-палка, фитнес-браслет, умные часы, СПб ,Питер, Санкт-Петербург">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="style/style.css">
@@ -77,11 +78,10 @@
     </div>
   </div>
 
-  <div class="header-catalog">
+  <nav class="header-catalog">
     <ul class="catalog-outer reset-list">
       <li class="catalog-outer__item">
         <a class="catalog-outer__link link link--bold" href="#">Каталог товаров</a>
-        <!-- чтобы открыть каталог необходимо убрать класс absolutely-hidden-->
         <ul class="header-catalog__list container reset-list absolutely-hidden">
           <li class="header-catalog__item" >
             <a class="header-catalog__link link" href="#">Виртуальная реальность</a>
@@ -104,7 +104,7 @@
         </ul>
       </li>
     </ul>
-  </div>
+  </nav>
   <div class="header-vendor">
     <ul class="vendor-list reset-list">
       <li class="vendor-list__item">
@@ -363,14 +363,13 @@
           </li>
           <li class="popup-form_item popup-form_item--product">
             <label class="popup-form__label popup-form__label--product" for="person-form__product">Что нужно привезти:</label>
-            <input class="popup-form__input popup-form__input--product" type="tel" name="person-email" id="person-form__product"
+            <input class="popup-form__input popup-form__input--product" type="tel" name="person-product" id="person-form__product"
                    placeholder="В свободной форме" required>
           </li>
           <li class="popup-form_item popup-form_item--product-count">
-
             <label class="popup-form__label popup-form__label--product-count" for="person-form__product-count">Количество:</label>
             <input class="popup-form__input popup-form__input--product-count popup-form__input--active" type="number" min="1"
-                   step="1" name="person-email" id="person-form__product-count"
+                   step="1" name="product-count" id="person-form__product-count"
                    value="1" required>
             <button class="input-control__button input-control__button--minus" type="button"></button>
             <button class="input-control__button input-control__button--plus" type="button"></button>

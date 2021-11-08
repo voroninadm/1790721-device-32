@@ -144,7 +144,7 @@
 
 .page,
 .page-catalog {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 40px 0 0 0;
   font-family: Raleway, "Verdana", sans-serif;;
@@ -916,6 +916,7 @@ display: grid;*/
 
 .features-table {
   display: flex;
+  flex-wrap: wrap;
   padding: 23px 0;
   box-sizing: border-box;
 }
@@ -1155,14 +1156,16 @@ display: grid;*/
 
 /*---rare-item---*/
 .rare-item {
+  position: relative;
   padding: 50px 0;
   background: #f0f0f0;
   background-clip: content-box;
 }
 
 .rare-item__link {
-  display: flex;
-  padding: 0 33px 0 0;
+  display: grid;
+  grid-template-columns: 125px auto 120px;
+  column-gap: 20px;
   align-items: center;
   font-size: 20px;
   line-height: 127%;
@@ -1173,12 +1176,11 @@ display: grid;*/
 }
 
 .rare-item__link::before {
-  display: inline-block;
+  display: block;
+  box-sizing: border-box;
   width: 125px;
   height: 100px;
-  margin-right: 195px;
   vertical-align: center;
-  flex-shrink: 1;
   content: "";
   background: url("../images/svg/main/rare-delivery.svg") 50% 50% no-repeat,
               #ffe17f;
@@ -1186,12 +1188,15 @@ display: grid;*/
 }
 
 .rare-item__link::after {
-  display: inline-block;
+  position: absolute;
+  top: 80px;
+  right: 33px;
+  display: block;
+  box-sizing: border-box;
   width: 40px;
   height: 40px;
-  margin-left: auto;
+  justify-self: center;
   vertical-align: center;
-  flex-shrink: 1;
   content: "";
   background: url("../images/svg/main/rare-info.svg") 50% 50% no-repeat,
   rgba(220, 220, 220, 0.5);
@@ -1925,6 +1930,7 @@ display: grid;*/
 
 .breadcrumbs__list {
   display: flex;
+  flex-wrap: wrap;
   transform: translateX(-12px);
 }
 
@@ -1971,7 +1977,7 @@ display: grid;*/
   height: 7px;
   transform: translate(-100%, -50%);
   content: "";
-  background-image: url("../images/svg/catalog/breascrumbs-arrow 1.svg");
+  background-image: url("../images/svg/catalog/breascrumbs-arrow.svg");
 }
 
 /*---catalog-tiles---*/
@@ -2068,6 +2074,8 @@ display: grid;*/
 
 .range-bar {
   position: absolute;
+  left: 0;
+  width: 119px;
   height: 3px;
   display: flex;
   justify-content: space-between;
@@ -2124,6 +2132,16 @@ display: grid;*/
   font-size: 15px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.price-filter__label--min{
+  top: 16px;
+  left: -5px;
+}
+
+.price-filter__label--max{
+  top: 16px;
+  left: 91px;
 }
 
 .price-filter__input {
