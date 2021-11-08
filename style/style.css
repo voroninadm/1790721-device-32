@@ -271,8 +271,8 @@
 }
 
 .searcher__button:focus {
-  border-color: #af4fff;
-  outline: none;
+  outline: 2px solid #af4fff;
+  outline-offset: -1px;
 }
 
 .searcher__button:active {
@@ -344,7 +344,7 @@
   width: 13px;
   height: 12px;
   margin: 0 8px 0 0;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
   background-image: url("../images/svg/header/header-person.svg");
 }
@@ -396,7 +396,7 @@
   height: 12px;
   width: 10px;
   margin: 0 10px 0 0;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
   background-image: url("../images/svg/header/header-compare.svg");
 }
@@ -426,7 +426,7 @@
   width: 16px;
   height: 14px;
   margin: 0 10px 0 0;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
   background-image: url("../images/svg/header/header-basket.svg");
 }
@@ -581,7 +581,7 @@
   width: 100%;
   padding: 15px 5px;
   box-sizing: border-box;
-  vertical-align: center;
+  vertical-align: middle;
   text-align: center;
   outline: none;
   border: none;
@@ -665,8 +665,6 @@
 }
 
 .header-catalog__list {
-/* Для открытия окна
-display: grid;*/
   position: absolute;
   top: 140px;
   left: 0;
@@ -967,7 +965,7 @@ display: grid;*/
 
 .catalog-tiles__link::before {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   width: 160px;
   height: 160px;
   margin: 0 0 31px 0;
@@ -978,7 +976,7 @@ display: grid;*/
   position: absolute;
   z-index: -1;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   width: 160px;
   height: 160px;
   margin: 0 0 33px 0;
@@ -1180,7 +1178,7 @@ display: grid;*/
   box-sizing: border-box;
   width: 125px;
   height: 100px;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
   background: url("../images/svg/main/rare-delivery.svg") 50% 50% no-repeat,
               #ffe17f;
@@ -1196,7 +1194,7 @@ display: grid;*/
   width: 40px;
   height: 40px;
   justify-self: center;
-  vertical-align: center;
+  vertical-align: middle ;
   content: "";
   background: url("../images/svg/main/rare-info.svg") 50% 50% no-repeat,
   rgba(220, 220, 220, 0.5);
@@ -1291,7 +1289,7 @@ display: grid;*/
   width: 8px;
   height: 8px;
   margin: 0 26px 0 0;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
   background: #ffe17f;
   border-radius: 50%;
@@ -1378,7 +1376,7 @@ display: grid;*/
   width: 14px;
   height: 14px;
   margin: 0 21px 0 0;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
   background: url("../images/svg/main/subscribe-ok.svg") 50% 50% no-repeat;
   border: none;
@@ -1872,7 +1870,7 @@ display: grid;*/
   border: none;
   width: 40px;
   height: 40px;
-  vertical-align: center;
+  vertical-align: middle;
   border-radius: 50%;
   content: "";
   transition: 0.3s;
@@ -2235,7 +2233,7 @@ display: grid;*/
   border: 2px solid #000000;
   border-radius: 3px;
   content: "";
-  vertical-align: center;
+  vertical-align: middle;
   opacity: 0.2;
 
 }
@@ -2304,7 +2302,7 @@ display: grid;*/
   content: "";
   border: 2px solid #000000;
   border-radius: 50%;
-  vertical-align: center;
+  vertical-align: middle;
   opacity: 0.2;
 }
 
@@ -2395,7 +2393,7 @@ display: grid;*/
   display: inline-block;
   width: 11px;
   height: 10px;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
 }
 
@@ -2558,7 +2556,7 @@ display: grid;*/
 .product-card__title {
   display: inline-block;
   width: 280px;
-  vertical-align: center;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 18px;
   line-height: 140%;
@@ -2567,7 +2565,7 @@ display: grid;*/
 
 .product-card__price {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   padding: 5px 0 0 0;
   margin-left: auto;
   font-size: 18px;
@@ -2625,7 +2623,8 @@ display: grid;*/
 }
 
 .pagination__link {
-  padding: 20px 18px 20px 24px;
+  width: 125px;
+  padding: 20px 20px 20px 26px;
   box-sizing: border-box;
   border: 5px solid transparent;
   cursor: pointer;
@@ -2655,14 +2654,13 @@ display: grid;*/
 
 .pages {
   display: flex;
-  width: 180px;
-  justify-content: space-between;
-  transform: translateX(22px);
+  flex-wrap: wrap;
+  transform: translateX(26px);
 }
 
 .pages__link {
-  max-width: 17px;
   display: block;
+  max-width: 38px;
   padding: 10px 15px;
   box-sizing: border-box;
   color: rgba(68, 68, 68, 0.3);
